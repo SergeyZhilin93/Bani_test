@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+    body
+        .overlay
+        include components/headerForOtherPages.pug
+        section.certificate
+            .container
+                h1 Подарочные сертификаты
+                .content_block
+                    img(src="assets/img/cert.jpg", alt="")
+                    .info_block
+                        p У вас есть знакомые, которых не вытащить из бани под любым предлогом? В +35 они ходят с довольной улыбкой? Мы хотим видеть их в «Усачевских банях». У нас есть подарочные сертификаты номиналом
+                            span 5000 руб,
+                            span 10000 руб,
+                            span 15000 руб,
+                            span 30000 руб.
+                        .btn_block
+                            .select-wrapper
+                                p Выберите номинал
+                                .select
+                                    select
+                                        option 5000 руб
+                                        option 10000 руб
+                                        option 15000 руб
+                                        option 30000 руб
+                            .btn_buy(script-role='certificate_feedback')
+                                | Купить
+
+            include components/social.pug
+
+        include components/feedback.pug
+        include components/certificate_feedback.pug
+        include components/form_message.pug
+
+        include components/footer.pug
+
+        script(src="js/main.js")

@@ -1,0 +1,65 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+
+    body
+        .overlay
+        .form-message
+            img.form-message-close(src="assets/img/feedback_close.svg", alt="")
+            .recall-text
+                h2 Спасибо!
+                p Мы получили ваш отзыв!
+        include components/headerForOtherPages.pug
+        .recall_page
+            .container
+                h1 Написать отзыв
+                .content-wrapper
+                    section.form-block
+                        h2 Заполните форму
+                        form#recall
+                            .input-wrapper
+                                p.title-input Ваше имя*
+                                input(type="text" name='name')
+                            .input-wrapper
+                                p.title-input Ваш телефон
+                                input(type="tel" name='phone' placeholder="+ 7 (___)___-__-__")
+                            .input-wrapper
+                                p.title-input Текст сообщения*
+                                textarea(name="recall", placeholder="Введите текст")
+                            label.check-box
+                                input(class="check", type="checkbox", name="terms", id="politics")
+                                .castom-checkbox
+                                p Даю согласие на <span>обработку персональных данных</span>
+                            p.help-text * Обязательное поле
+                            input(type="submit")
+                    section.recalls-block
+                        .recall-item
+                            .title-block
+                                p.name Анастасия
+                                p.date 10.01.2020
+                            p.text Очень уютно, людей меньше относительно других популярных мест, пар отличный, цена приемлемая
+                        .recall-item
+                            .title-block
+                                p.name Андрей
+                                p.date 4.08.2019
+                            p.text После ремонта. Кто хочет получить настоящее удовольствие от бань,то вам сюда. Каждый час готовится парная с травами профессиональным банщиком, отличный массаж, уютная обстановка, доброжелательность персонала.
+                        .recall-item
+                            .title-block
+                                p.name Александр
+                                p.date 15.01.2020
+                            p.text В Усачевские банях,  по моему субъективному мнению,  один из лучших паров как в Москве, так и за её пределами и этим всё сказано. Пары делаются исключительно из натуральных ингредиентов. Советую хотя бы раз сходить в Усачевские бани, тода вы поймете, что такое ПАР и каким он должен быть.
+
+        include components/footer.pug
+
+        script(src="js/jquery-3.5.0.min.js")
+        script(src="js/phoneMask.js")
+        script(src="assets/fancybox/jquery.fancybox.min.js")
+        script(src="js/jquery.validate.min.js")
+        script(src="js/script.js")

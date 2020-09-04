@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+
+    body
+        .overlay
+        include components/headerForOtherPages.pug
+        section.branches-block
+            .container
+                h1 Отделения
+                .department-paginator
+                    p.active(data-id=1) Мужское отделение
+                    p(data-id=2) Женское отделение
+                    p(data-id=3) Высший разряд
+                    p(data-id=4) Vip-кабинки
+                    p(data-id=5) Кабинеты
+
+
+            .department-block
+                .department-item.active(data-id=1)
+                    .bg-box.mens-department-bg
+                        .container
+                            h2 Мужское отделение
+                    .container
+                        .info-box
+                            .block-btns
+                                p Традиции нужны, чтобы их сохранять. С 945 года на Руси и стар, и млад баню посещали вместе. Готовы поддержать культурное наследие?
+                                .btn-box
+                                    .btn-brown(script-role='menu') Меню бара
+                                    .btn-white(script-role="tea") Чайная карта
+                            .table-box
+                                .time-box
+                                    h3 Время посещения
+                                    p.mr-46 ПН
+                                        span 16:00 – 23:00
+                                    p.mr-46 ВТ-ПТ
+                                        span 09:00 – 23:00
+                                    p СБ-ВС
+                                        span 08:00 – 23:00
+                                .price-box
+                                    h3 Стоимость
+                                    .title-for-table
+                                        .space
+                                        p
+                                        p Время
+                                        p Стоимость
+                                    .table-str
+                                        p.bold Мужское отделение
+                                        .title-for-table-mobil
+                                            p
+                                            p Время
+                                        p
+                                        p без ограничения
+                                        p.price 1 800 ₽
+                                    .table-str
+                                        p.bold Вход для пенсионеров
+                                        .title-for-table-mobil
+                                            p
+                                            p Время
+                                        p
+                                        p до 17:00 в будни согласно режиму работы бани
+                                        p.price 700 ₽
+                                    .table-str
+                                        p.bold Вход для Ветеранов ВОВ
+                                        .title-for-table-mobil
+                                            p
+                                            p Время
+                                        p
+                                        p без ограничения
+                                        p.price 0 ₽
+                                    .table-str-last
+                                        p.bold Пробковый сбор (за 1 ед. еды и алкоголя)
+                                        .space
+                                        p.price 500 ₽
+                            .btn-box
+                                .btn-brown(script-role='menu') Меню бара
+                                .btn-white(script-role="tea") Чайная карта
+                        //- .image_block
+                        //-     a(data-fancybox="gallery" href="assets/img/action1.jpg")
+                        //-         img(src="assets/img/action1.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action2.jpg")
+                        //-         img(src="assets/img/action2.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action3.jpg")
+                        //-         img(src="assets/img/action3.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action1.jpg")
+                        //-         img(src="assets/img/action1.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action2.jpg")
+                        //-         img(src="assets/img/action2.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action3.jpg")
+                        //-         img(src="assets/img/action3.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action1.jpg")
+                        //-         img(src="assets/img/action1.jpg", alt="")
+                        //-     a(data-fancybox="gallery" href="assets/img/action2.jpg")
+                        //-         img(src="assets/img/action2.jpg", alt="")
+                        .cabonets_image_block
+                            .img-wrapper
+                                img(src="assets/img/action1.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/action2.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/action3.jpg", alt="")
+                .department-item(data-id=2)
+                    .bg-box.women-departament-bg
+                        .container
+                            h2 Женское отделение
+                    .container
+                        .info-box
+                            .block-btns
+                                p Традиции нужны, чтобы их сохранять. С 945 года на Руси и стар, и млад баню посещали вместе. Готовы поддержать культурное наследие?
+                                .btn-box
+                                    .btn-brown(script-role='menu') Меню бара
+                                    .btn-white(script-role="tea") Чайная карта
+                            .table-box
+                                .time-box
+                                    h3 Время посещения
+                                    p.mr-46 ПН
+                                        span 16:00 - 23:00
+                                    p.mr-46 ВТ
+                                        span 9:00 - 23:00
+                                    p.mr-46 СР, ЧТ
+                                        span 9:00 - 17:00
+                                    p.mr-46 ПТ
+                                        span 9:00 - 23:00
+                                    p.mr-46 СБ
+                                        span 8:00 - 23:00
+                                    p ВС
+                                        span 8:00 - 15:00
+
+                                .price-box
+                                    h3 Стоимость
+                                    .title-for-table
+                                        .space
+                                        p
+                                        p Время
+                                        p Стоимость
+                                    .table-str
+                                        p.bold Женское отделение
+                                        .title-for-table-mobil
+                                            p
+                                            p Время
+                                        p
+                                        p без ограничения
+                                        p.price 1 500 ₽
+                                    .table-str
+                                        p.bold VIP (до 12 чел.)
+                                        .title-for-table-mobil
+                                            p
+                                            p Время
+                                        p
+                                        p 3 часа*
+                                        p.price 9 000 ₽
+                                        p.hide-mobil Продление
+                                        .space.hide-mobil
+                                        p.hide-mobil 1 час
+                                        p.price.hide-mobil 3 000 ₽
+                                        p.show-mobil Продление - 3 000 ₽ / час
+                                    .table-str
+                                        p.bold Вход для пенсионеров
+                                        p
+                                        p до 16:00 в будни согласно режиму работы бани
+                                        p.price 700 ₽
+                                    .table-str
+                                        p.bold Вход для Ветеранов ВОВ
+                                        p
+                                        p без ограничения
+                                        p.price 0 ₽
+                                    .table-str-last
+                                        p.bold Пробковый сбор (за 1 ед. еды и алкоголя)
+                                        .space
+                                        p.price 500 ₽
+                        .cabonets_image_block
+                            .img-wrapper
+                                img(src="assets/img/women1.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/women2.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/women3.jpg", alt="")
+                .department-item(data-id=3)
+                    .bg-box.highest-rank-bg
+                        .container
+                            h2 Высший разряд
+                    .container
+                        .info-box
+                            .block-btns
+                                p Прекрасная парная, изящный интерьер в светлых тонах, отменное обслуживание, великолепная кухня -  идеальная атмосфера для отдыха!
+                                .btn-box
+                                    .btn-brown(script-role='menu') Меню бара
+                                    .btn-white(script-role="tea") Чайная карта
+                            .table-box
+                                .time-box
+                                    h3 Время посещения
+                                    //- h4 Семейный день
+                                    //- p.mr-46 СБ
+                                    //-     span 8:00 – 23:00
+                                    //- h4 Женский разряд
+                                    //- p.mr-46 ВТ-ПТ
+                                    //-     span 09:00 – 17:00
+                                    //- p СБ-ВС
+                                    //-     span 08:00 – 17:00
+                                    h4 Мужской разряд
+                                    p.mr-46 СР, ЧТ
+                                        span 18:00 – 23:00
+                                    p.mr-46 ВС
+                                        span 16:00 – 23:00
+                                .price-box
+                                    h3 Стоимость
+                                    .title-for-table
+                                        .space
+                                        p
+                                        p Время
+                                        p Стоимость
+                                    .table-str
+                                        p.bold Высший разряд
+                                        p
+                                        p без ограничения
+                                        p.price 2 300 ₽
+                                    .table-str
+                                        p.bold VIP (до 12 чел.)
+                                        .title-for-table-mobil
+                                            p
+                                            p Время
+                                        p
+                                        p 3 часа*
+                                        p.price 9 000 ₽
+                                        p.hide-mobil Продление
+                                        .space.hide-mobil
+                                        p.hide-mobil 1 час
+                                        p.price.hide-mobil 3 000 ₽
+                                        p.show-mobil Продление - 3 000 ₽ / час
+                                    //- .table-str
+                                    //-     p.bold Вход для пенсионеров, инвалидов 1 и 2 группы, многодетных, студентов *
+                                    //-     p без ограничения
+                                    //-     p до 16:00, кропе ПН
+                                    //-     p.price 700 ₽
+                                    //- .table-str
+                                    //-     p.bold Вход для пенсионеров, инвалидов 1 и 2 группы, многодетных, студентов *
+                                    //-     p без ограничения
+                                    //-     p после 16:00 в будни
+                                    //-     p.price 1 000 ₽
+                                    //- .table-str
+                                    //-     p.bold Вход для Ветеранов ВОВ
+                                    //-     p без ограничения
+                                    //-     p без ограничения
+                                    //-     p.price 0 ₽
+                                    //- .table-str-last
+                                    //-     p.bold Пробковый сбор (за 1 ед. еды и алкоголя)
+                                    //-     .space
+                                    //-     p.price 500 ₽
+                        .cabonets_image_block
+                            .img-wrapper
+                                //- img(src="assets/img/action1.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/highest-rank2.jpg", alt="")
+                            .img-wrapper
+                                //- img(src="assets/img/action3.jpg", alt="")
+                .department-item(data-id=4)
+                    .bg-box.vip-department-bg
+                        .container
+                            h2 Vip-кабинки
+                    .container
+                        .info-box
+                            .block-btns
+                                p Хотите собраться с друзьями на «пенные» посиделки, как в старые добрые времена? В комнатах отдыха, на просторных кожаных диванах размещаются до 14 человек.
+                                .btn-box
+                                    .btn-brown(script-role='feedback') Забронировать кабинку
+                            .table-box
+                                .time-box
+                                    h3 Время посещения
+                                    p.mr-46 ПН
+                                        span 16:00 – 23:00
+                                    p.mr-46 ВТ-ПТ
+                                        span 09:00 – 23:00
+                                    p СБ-ВС
+                                        span 08:00 – 23:00
+                                .price-box
+                                    h3 Стоимость
+                                    .title-for-table
+                                        .space
+                                        p Кол-во человек
+                                        p Время
+                                        p Стоимость
+                                    .table-str
+                                        p.bold VIP 1
+                                        .title-for-table-mobil
+                                            p Кол-во человек
+                                            p Время
+                                        p до 14 чел.
+                                        p 3 часа*
+                                        p.price.hide-mobil 9 000 ₽
+                                        p.hide-mobil Продление
+                                        .space.hide-mobil
+                                        p.hide-mobil 1 час
+                                        p.price.hide-mobil 3 000 ₽
+                                        p.price.show-mobil.show 9 000 ₽
+                                        p.show-mobil Продление - 3 000 ₽ / час
+                                    .table-str
+                                        p.bold VIP 2
+                                        .title-for-table-mobil
+                                            p Кол-во человек
+                                            p Время
+                                        p до 8 чел.
+                                        p 3 часа*
+                                        p.price.hide-mobil 6 000 ₽
+                                        p.hide-mobil Продление
+                                        .space.hide-mobil
+                                        p.hide-mobil 1 час
+                                        p.price.hide-mobil 2 000 ₽
+                                        p.price.show-mobil.show 6 000 ₽
+                                        p.show-mobil Продление - 2 000 ₽ / час
+                                    .table-str
+                                        p.bold VIP 3
+                                        .title-for-table-mobil
+                                            p Кол-во человек
+                                            p Время
+                                        p до 8 чел.
+                                        p 3 часа*
+                                        p.price.hide-mobil 6 000 ₽
+                                        p.hide-mobil Продление
+                                        .space.hide-mobil
+                                        p.hide-mobil 1 час
+                                        p.price.hide-mobil 2 000 ₽
+                                        p.price.show-mobil.show 6 000 ₽
+                                        p.show-mobil Продление - 2 000 ₽ / час
+                                    p.small *оплачивается дополнительно к входному билету
+                                .btn-box
+                                    .btn-brown(script-role='feedback') Забронировать кабинку
+                        .vip-sliders-block
+                            .vip-slider-wrapper
+                                .vip-slider
+                                    .slider-item
+                                        img(src="assets/img/vip1.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip1.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip1.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip1.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip1.jpg")
+                                .text-box
+                                    h4 VIP 1
+                                    p Светлый просторный кабинет с окном позволит удобно расположиться компании до 14 чел.
+                            .vip-slider-wrapper.center-warpper
+                                .vip-slider
+                                    .slider-item
+                                        img(src="assets/img/vip2.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip2.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip2.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip2.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip2.jpg")
+                                .text-box
+                                    h4 VIP 2
+                                    p Уютный кабинет с окном на 8 посадочных мест. Прекрасное место, чтобы уединиться в небольшой компании.
+                            .vip-slider-wrapper
+                                .vip-slider
+                                    .slider-item
+                                        img(src="assets/img/vip3.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip3.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip3.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip3.jpg")
+                                    .slider-item
+                                        img(src="assets/img/vip3.jpg")
+                                .text-box
+                                    h4 VIP 3
+                                    p Светлый просторный кабинет с окном позволит удобно расположиться компании до 8 чел.
+                .department-item(data-id=5)
+                    .bg-box.cabinets-departament-bg
+                        .container
+                            h2 Кабинеты
+                    .container
+                        .info-box
+                            .block-btns
+                                p Индивидуальный кабинет для комфортного отдыха небольшой компании. В комнатах отдыха, на просторных кожаных диванах размещаются до 6 человек.
+                                .btn-box
+                                    .btn-brown(script-role='feedback') Забронировать кабинку
+                            .table-box
+                                .time-box
+                                    h3 Время посещения
+                                    p.mr-46 ПН
+                                        span 16:00 – 23:00
+                                    p.mr-46 ВТ-ПТ
+                                        span 09:00 – 23:00
+                                    p СБ-ВС
+                                        span 08:00 – 23:00
+                                .price-box
+                                    h3 Стоимость
+                                    .title-for-table
+                                        .space
+                                        p Кол-во человек
+                                        p Время
+                                        p Стоимость
+                                    .table-str
+                                        p.bold Кабинет 1,2,3
+                                        .title-for-table-mobil
+                                            p Кол-во человек
+                                            p Время
+                                        p до 6 чел.
+                                        p 3 часа*
+                                        p.price 4 500 ₽
+                                        p.hide-mobil Продление
+                                        .space.hide-mobil
+                                        p.hide-mobil 1 час
+                                        p.price.hide-mobil 1 500 ₽
+                                        p.show-mobil Продление - 1 500 ₽ / час
+                                    p.small *оплачивается дополнительно к входному билету
+                                .btn-box
+                                    .btn-brown(script-role='feedback') Забронировать кабинку
+                        .cabonets_image_block
+                            .img-wrapper
+                                img(src="assets/img/action1.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/action2.jpg", alt="")
+                            .img-wrapper
+                                img(src="assets/img/action3.jpg", alt="")
+
+        include components/feedback.pug
+        include components/tea_card.pug
+        include components/form_message.pug
+        include components/menu.pug
+
+        include components/footer.pug
+
+        script(src="js/main.js")

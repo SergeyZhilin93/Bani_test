@@ -1,0 +1,22 @@
+{
+  "name": "icon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "serve": "parcel serve -p 4343 --host 0.0.0.0 src/index.pug src/beautyshop.pug src/about.pug src/branches.pug src/certificate.pug src/contacts.pug src/gallery.pug src/recall.pug src/reservation.pug src/service.pug src/stocks.pug src/shoeshine.pug",
+    "build": "parcel build --no-source-maps src/index.pug src/beautyshop.pug src/about.pug src/branches.pug src/certificate.pug src/contacts.pug src/gallery.pug src/recall.pug src/reservation.pug src/service.pug src/stocks.pug"
+  },
+  "author": "fm13",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "parcel": "^1.12.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "pug": "^2.0.4",
+    "stylus": "^0.54.7"
+  }
+}

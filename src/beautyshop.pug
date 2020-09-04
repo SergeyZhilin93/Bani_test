@@ -1,0 +1,380 @@
+doctype html
+html.beautyshop(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Усачевские бани
+		link(rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css")
+		link(rel="stylesheet", href="css/style.styl")
+		link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+	body
+		.overlay.pointer
+		include components/beautyHeader.pug
+		section.beautyShop
+			.breadcrumbs
+				a(href="/") Главная
+				span.round
+				span Салон
+
+			h1 Салон красоты
+
+			.department-paginator
+				p.active(data-id=1) Парикмахерские услуги
+				p(data-id=2) Педикюр
+				p(data-id=3) Маникюр
+
+			.department-block
+				.department-item.active(data-id=1)
+					.blockTitle.barber
+						h2 Парикмахерские услуги
+
+					.description
+						div.text Женские стрижки, окрашивание, укладки, SPA, массаж, пилинг, обертывания и ещё десятки вариантов ухода за собой!
+						div.button
+							button.buyService.barber Заказать услугу
+
+					.infoBlock
+						.shedule
+							.title Режим работы:
+							.body
+								.line
+									.name Пн–Вс
+									.value 10:00 — 22:00
+								.line
+									.name Тел.
+									.value #[a(href="tel:+74957408436") 7 495 740 8436]
+						.price
+							.title.short Стоимость
+							table
+								tr
+									th.name
+									th.hairType Тип волос
+									th.cost Стоимость
+
+								//«Абсолютное счастье»
+								tr.sectionEnd
+									td.name #[b «Абсолютное счастье» от Lebel]
+									td
+									td 2 800 / 3 300 / 3 900 ₽
+
+								// Стрижка
+								tr.thickPad
+									td.sectionEnd.name(rowspan=3) Стрижка #[i (мытьё, укладка феном по форме)]
+									td.hairType короткие
+									td 1 800 ₽
+								tr.thickPad
+									td средние
+									td 2 300 ₽
+								tr.thickPad.sectionEnd
+									td длинные
+									td 2 800 ₽
+
+								tr
+									td.name Стрижка одним срезом
+									td
+									td 900 ₽
+								tr.topPadding
+									td Детская стрижка #[i до 10 лет]
+									td
+									td 900 ₽
+								tr.biggerTop.sectionEnd
+									td.name Стрижка чёлки
+									td
+									td 500 ₽
+
+								// Химическая завивка
+								tr.thickPad.topPadding
+									td.sectionEnd.name(rowspan=3) Химическая завивка волос
+									td.hairType короткие
+									td 1 140 ₽
+								tr.thickPad
+									td средние
+									td 1 500 ₽
+								tr.thickPad.sectionEnd
+									td длинные
+									td 1 800 ₽
+
+
+								// Окрашивание
+								tr.thickPad.topPadding
+									td.sectionEnd.name(rowspan=3) Окрашивание без стоимости красителя
+									td короткие
+									td 2 000 ₽
+								tr.thickPad
+									td средние
+									td 3 000 ₽
+								tr.thickPad.sectionEnd
+									td длинные
+									td 4 000 ₽
+
+								// Окрашивание Ollin
+								tr.thickPad.topPadding
+									td.name(rowspan=3) Окрашивание краситель Ollin
+									td короткие
+									td 2 300 ₽
+								tr.thickPad
+									td средние
+									td 3 450 ₽
+								tr.thickPad
+									td длинные
+									td 4 600 ₽
+								tr.thickPad.sectionEnd
+									td.name Окрашивание краситель Wella - 10 мл.
+									td
+									td 200 ₽
+
+								// Мелирование
+								tr.thickPad.topPadding
+									td.name(rowspan=3) Мелирование
+									td короткие
+									td 3 300 ₽
+								tr.thickPad
+									td средние
+									td 4 400 ₽
+								tr.thickPad
+									td длинные
+									td 5 400 ₽
+								tr.thickPad
+									td.name Мелирование прикорневое
+									td
+									td 3 300 ₽
+								tr.thickPad.sectionEnd
+									td.name Осветлитель - 10 гр.
+									td
+									td 90 ₽
+
+								// Сложное окрашивание
+								tr.topPadding.sectionEnd
+									td.name #[b Сложное окрашивание] #[i (балаяж, шатуш, омбре, аиртач)]
+									td
+									td 7 000 – 13&nbsp;000&nbsp;₽
+
+								// Укладка
+								tr.thickPad.topPadding
+									td.name(rowspan=3) Укладка
+									td короткие
+									td 1 500 ₽
+								tr.thickPad
+									td средние
+									td 1 800 ₽
+								tr.thickPad
+									td длинные
+									td 2 100 ₽
+
+					.gallery
+						img(alt="" src="assets/img/beautyshop/gallery/1.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/2.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/3.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/4.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/5.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/6.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/7.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/8.jpg")
+
+				.department-item(data-id=2)
+					.blockTitle.pedicure
+						h2 Педикюр
+
+					.description
+						div.text Приходите на педикюр! Нам очень важно, чтобы вы уходили довольными и приходили к нам с удовольствием!
+						div.button
+							button.buyService.pedicure Заказать услугу
+
+					.infoBlock
+						.shedule
+							.title Режим работы:
+							.body
+								.line
+									.name Пн–Вс
+									.value 10:00 — 22:00
+								.line
+									.name Тел.
+									.value #[a(href="tel:+74957408436") 7 495 740 8436]
+						.price
+							.title.short Стоимость
+							table
+								tr
+									th.name
+									th.emptyCenter
+									th.cost Стоимость
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Педикюр #[i (классический, аппаратный, комбинированный)]
+									td
+									td 2 200 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Педикюр с покрытием гель-лаком
+									td
+									td 3 000 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Педикюр без обработки стоп
+									td
+									td 1 100 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Устранение дефектов (не медицинское)
+									td
+									td 250 ₽
+
+					.gallery
+						img(alt="" src="assets/img/beautyshop/gallery/1.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/2.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/3.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/4.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/5.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/6.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/7.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/8.jpg")
+
+				.department-item(data-id=3)
+					.blockTitle.manicure
+						h2 Маникюр
+
+					.description
+						div.text Подчеркните красоту своих рук — сделайте стильный маникюр!
+						div.button
+							button.buyService.manicure Заказать услугу
+
+					.infoBlock
+						.shedule
+							.title Режим работы:
+							.body
+								.line
+									.name Пн–Вс
+									.value 10:00 — 22:00
+								.line
+									.name Тел.
+									.value #[a(href="tel:+74957408436") 7 495 740 8436]
+						.price
+							.title.short Стоимость
+							table
+								tr
+									th.name
+									th.emptyCenter
+									th.cost Стоимость
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Маникюр классический
+									td
+									td 1 000 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Комбинированный маникюр
+									td
+									td 1 000 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Аппаратный маникюр
+									td
+									td 1 200 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Маникюр с покрытием гель-лаком
+									td
+									td 1 800 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Наращивание ногтей #[i (маникюр + покрытие)]
+									td
+									td 3 300 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Покрытие гель-лаком #[i (выравнивание, покрытие однотонное)]
+									td
+									td 1 000 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Покрытие френч
+									td
+									td 1 300 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Покрытие лаком
+									td
+									td 250 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Лечебное покрытие
+									td
+									td 250 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Покрытие IBX
+									td
+									td 900 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Ремонт ногтей #[i (1 единица)]
+									td
+									td 300 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Сложный дизайн #[i (1 единица)]
+									td
+									td 150 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Укрепление гель
+									td
+									td 600 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Укрепление акрил
+									td
+									td 400 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Снятие Shellac
+									td
+									td 350 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Снятие гель / акрил
+									td
+									td 550 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Опил ногтей
+									td
+									td 500 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Парафинотерапия
+									td
+									td 500 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Уход руки / ноги
+									td
+									td 500 ₽
+
+								tr.topPadding.sectionEnd
+									td.sectionEnd.name Массаж руки / ноги
+									td
+									td 250 ₽
+
+								tr.topPadding
+									td.name Детский маникюр / педикюр
+									td
+									td 500 ₽
+
+					.gallery
+						img(alt="" src="assets/img/beautyshop/gallery/1.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/2.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/3.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/4.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/5.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/6.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/7.jpg")
+						img(alt="" src="assets/img/beautyshop/gallery/8.jpg")
+
+		include components/orderBeautyShop.pug
+		include components/form_message.pug
+
+		include components/beautyFooter.pug
+
+		script(src="js/main.js")

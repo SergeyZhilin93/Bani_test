@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+    body
+        .overlay
+        include components/headerForOtherPages.pug
+        section.service
+            .container
+                h1 Услуги
+                .service-paginator
+                        p.active(data-id=1) Услуги
+                        p(data-id=2) Кафе
+                        p(data-id=3) Банные принадлежности
+
+                .service-block
+                    .service-item.active(data-id=1)
+                        .service_wrapper
+                            .wrapper_content.wrapper-content-service
+                                .wrapper_text_left.bani-item
+                                    p Парение
+                                    p Массаж 15 мин
+                                    p Массаж 30 мин
+                                    p Массаж 45 мин
+                                    p Массаж 60 мин
+                                    p Массаж 90 мин
+                                    p Массаж мыльный
+                                    p Помывка
+                                    p Помывка с берёз. вен. 30 мин
+                                    p Пилинг "кофе" 20 мин
+                                    p Пилинг "соль" 20 мин
+                                    p Обертывание 30 мин
+                                    p Солевой скраб 15 мин
+                                .wrapper_price_left.bani-item
+                                    p 1800 руб.
+                                    p 1000 руб.
+                                    p 1500 руб.
+                                    p 2000 руб.
+                                    p 2500 руб.
+                                    p 3000 руб.
+                                    p 2000 руб.
+                                    p 1000 руб.
+                                    p 1500 руб
+                                    p 1600 руб.
+                                    p 1300 руб.
+                                    p 1300 руб.
+                                    p 1200 руб.
+                    .service-item(data-id=2)
+                        .service_wrapper
+                            h3 Холодные закуски
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Селедка с картофелем и луком
+                                    p Капуста домашнего посола
+                                    p Ассорти из свежих овощей и зелени
+                                    p Свиная тарелка
+                                    p Огурцы соленые
+                                .wrapper_weight_left.auto-height
+                                    p 100/150/20 гр.
+                                    p 150/20 гр.
+                                    p 500 гр.
+                                    p 400/50 гр.
+                                    p 100 гр.
+                                .wrapper_price_left.auto-height
+                                    p 200 руб.
+                                    p 100 руб.
+                                    p 400 руб.
+                                    p 550 руб.
+                                    p 100 руб.
+                                .wrapper_text_right.auto-height
+                                    p Конская тарелка
+                                    p Казы сыровяленая
+                                    p Казы вареная
+                                    p Язык говяжий
+                                .wrapper_weight_right.auto-height
+                                    p 400 гр.
+                                    p 100 гр.
+                                    p 100 гр.
+                                    p 100/30 гр.
+                                .wrapper_price_right.auto-height
+                                    p 900 руб.
+                                    p 300 руб.
+                                    p 300 руб.
+                                    p 400 руб.
+                            h3 Салаты
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Оливье
+                                .wrapper_weight_left.auto-height
+                                    p 150 гр.
+                                .wrapper_price_left.auto-height
+                                    p 150 руб.
+                                .wrapper_text_right.auto-height
+                                    p Овощной (заправка на выбор: масло или сметана)
+                                .wrapper_weight_right.auto-height
+                                    p 150 гр.
+                                .wrapper_price_right.auto-height
+                                    p 150 руб.
+                            h3 Горячие закуски
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Креветки жаренные
+                                    p Креветки отварные
+                                    p Гренки с чесночным соусом
+                                .wrapper_weight_left.auto-height
+                                    p 500/1000 гр.
+                                    p 500/1000 гр.
+                                    p 120 гр.
+                                .wrapper_price_left.auto-height
+                                    p 950/1900 руб.
+                                    p 950/1900 руб.
+                                    p 200 руб.
+                                .wrapper_text_right.auto-height
+                                    p Куриные крылья в кляре
+                                    p Сыр «Чечил» жареный
+                                .wrapper_weight_right.auto-height
+                                    p 250/60/30 гр.
+                                    p 120/50 гр.
+                                .wrapper_price_right.auto-height
+                                    p 450 руб.
+                                    p 200 руб.
+                            h3 Супы
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Солянка мясная
+                                    p Куриная лапша
+                                .wrapper_weight_left.auto-height
+                                    p 250 гр.
+                                    p 250 гр.
+                                .wrapper_price_left.auto-height
+                                    p 250 руб.
+                                    p 200 руб.
+                                .wrapper_text_right.auto-height
+                                    p Окрошка на квасе
+                                .wrapper_weight_right.auto-height
+                                    p 250 гр.
+                                .wrapper_price_right.auto-height
+                                    p 200 руб.
+                            h3 Горячие блюда
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Свиная рулька
+                                    p Свиные ребрышки
+                                    p Сосиски с зел. гор-м и горчицей
+                                    p Ассорти колбасок
+                                    p Гречка с луком и грибами
+                                    p Корюшка жареная (1шт.)
+                                    p Цыпленок табака
+                                    p Телятина ребра
+                                .wrapper_weight_left.auto-height
+                                    p 1250 гр.
+                                    p 600/50 гр.
+                                    p 130/50/20 гр.
+                                    p 300/150/35 гр.
+                                    p 250 гр.
+                                    p 150 гр.
+                                    p 550 гр.
+                                    p 800/80 гр.
+                                .wrapper_price_left.auto-height
+                                    p 1100 руб.
+                                    p 750 руб.
+                                    p 150 руб.
+                                    p 600 руб.
+                                    p 100 руб.
+                                    p 200 руб.
+                                    p 600 руб.
+                                    p 750 руб.
+                                .wrapper_text_right.auto-height
+                                    p Телятина корейка
+                                    p Пельмени домашние со сметаной
+                                    p Голяшка ягненка
+                                    p Лопатка ягненка
+                                    p Голень индейки
+                                    p Камбала жаренная
+                                    p Форель радужная
+                                .wrapper_weight_right.auto-height
+                                    p 900/80 гр.
+                                    p 200/30 гр.
+                                    p 900/80 гр.
+                                    p 1000/80 гр.
+                                    p 650/80 гр.
+                                    p 550/50 гр.
+                                    p 130/50 гр.
+                                .wrapper_price_right.auto-height
+                                    p 1200 руб.
+                                    p 220 руб.
+                                    p 1150 руб.
+                                    p 1150 руб.
+                                    p 700 руб.
+                                    p 750 руб.
+                                    p 300 руб.
+                            h3 Гарниры
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Картофель отварной с укропом
+                                    p Картофель фри
+                                    p Картофель по-деревенски
+                                .wrapper_weight_left.auto-height
+                                    p 150 гр.
+                                    p 150 гр.
+                                    p 150 гр.
+                                .wrapper_price_left.auto-height
+                                    p 100 руб.
+                                    p 100 руб.
+                                    p 100 руб.
+                                .wrapper_text_right.auto-height
+                                    p Картофель жареный с луком
+                                    p Овощи гриль
+                                .wrapper_weight_right.auto-height
+                                    p 200 гр.
+                                    p 200 гр.
+                                .wrapper_price_right.auto-height
+                                    p 150 руб.
+                                    p 250 руб.
+                            h3 Соуса на выбор
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Кетчуп
+                                    p Горчица домашняя
+                                    p Хрен
+                                .wrapper_weight_left.auto-height
+                                    p 50 гр.
+                                    p 50 гр.
+                                    p 50 гр.
+                                .wrapper_price_left.auto-height
+                                    p 50 руб.
+                                    p 50 руб.
+                                    p 50 руб.
+                                .wrapper_text_right.auto-height
+                                    p Томатный острый
+                                    p Чесночный
+                                    p Барбекю
+                                .wrapper_weight_right.auto-height
+                                    p 50 гр.
+                                    p 50 гр.
+                                    p 50 гр.
+                                .wrapper_price_right.auto-height
+                                    p 50 руб.
+                                    p 50 руб.
+                                    p 50 руб.
+                            h3 Хлеб
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Белый
+                                .wrapper_weight_left.auto-height
+                                    p 20 гр.
+                                .wrapper_price_left.auto-height
+                                    p 10 руб.
+                                .wrapper_text_right.auto-height
+                                    p Черный
+                                .wrapper_weight_right.auto-height
+                                    p 20 гр.
+                                .wrapper_price_right.auto-height
+                                    p 10 руб.
+                            h3 Разливное пиво
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Крушевица светлое (импортное)
+                                    p Крушевица темное (импортное)
+                                .wrapper_weight_left.auto-height
+                                    p 500 мл.
+                                    p 500 мл.
+                                .wrapper_price_left.auto-height
+                                    p 300 руб.
+                                    p 300 руб.
+                                .wrapper_text_right.auto-height
+                                    p Паулайнер (импортное)
+                                    p Жигулевское
+                                .wrapper_weight_right.auto-height
+                                    p 500 мл.
+                                    p 500 мл.
+                                .wrapper_price_right.auto-height
+                                    p 300 руб.
+                                    p 150 руб.
+                            h3 Бутылочное пиво
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Хамовники Венское
+                                    p Хамовники Мюнхенское
+                                .wrapper_weight_left.auto-height
+                                    p 470 мл.
+                                    p 470 мл.
+                                .wrapper_price_left.auto-height
+                                    p 200 руб.
+                                    p 200 руб.
+                                .wrapper_text_right.auto-height
+                                    p Хамовники Пшеничное
+                                    p амовники Пильзенское
+                                .wrapper_weight_right.auto-height
+                                    p 470 мл.
+                                    p 470 мл.
+                                .wrapper_price_right.auto-height
+                                    p 200 руб.
+                                    p 200 руб.
+                            h3 К пиву
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Чипсы «Лейс» в ассортименте
+                                .wrapper_weight_left.auto-height
+                                    p 80 гр.
+                                .wrapper_price_left.auto-height
+                                    p 150 руб.
+                                .wrapper_text_right.auto-height
+                                    p Арахис «Джаз»
+                                .wrapper_weight_right.auto-height
+                                    p 150 гр.
+                                .wrapper_price_right.auto-height
+                                    p 200 руб.
+                            h3 Безалкогольное пиво
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Хайнекен (импортное)
+                                    p Хамовники
+                                .wrapper_weight_left.auto-height
+                                    p 300 мл.
+                                    p 300 мл.
+                                .wrapper_price_left.auto-height
+                                    p 150 руб.
+                                    p 150 руб.
+                                .wrapper_text_right.auto-height
+                                    p Квас «Очаковский»
+                                    p Квас домашний
+                                .wrapper_weight_right.auto-height
+                                    p 500 мл.
+                                    p 500 мл.
+                                .wrapper_price_right.auto-height
+                                    p 100 руб.
+                                    p 150 руб.
+                            h3 Чай
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Ассам Бехора
+                                    p Эрл Грей
+                                    p Пуэр
+                                    p Сенча
+                                .wrapper_weight_left.auto-height
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                .wrapper_price_left.auto-height
+                                    p 400 руб.
+                                    p 400 руб.
+                                    p 400 руб.
+                                    p 400 руб.
+                                .wrapper_text_right.auto-height
+                                    p Молочный Улун
+                                    p Зеленый с жасмином
+                                    p Ли Чжи Хун Ча (красный)
+                                .wrapper_weight_right.auto-height
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                .wrapper_price_right.auto-height
+                                    p 400 руб.
+                                    p 400 руб.
+                                    p 400 руб.
+                            h3 Травяные чаи
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Русские традиции
+                                    p Спокойной ночи
+                                    p Банный
+                                    p Ягодная поляна
+                                    p В непогоду
+                                .wrapper_weight_left.auto-height
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                .wrapper_price_left.auto-height
+                                    p 450 руб.
+                                    p 450 руб.
+                                    p 450 руб.
+                                    p 450 руб.
+                                    p 450 руб.
+                                .wrapper_text_right.auto-height
+                                    p Успокоительный
+                                    p Вечерний
+                                    p Альпийский луг
+                                    p Крымская здравница
+                                    p Фитнесс чай
+                                .wrapper_weight_right.auto-height
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                .wrapper_price_right.auto-height
+                                    p 450 руб.
+                                    p 450 руб.
+                                    p 450 руб.
+                                    p 450 руб.
+                                    p 450 руб.
+                            h3 Ягодные чаи
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Фруктовый (Байский)
+                                    p Облепиха-апельсин
+                                    p Облепиха с яблоком и имбирем
+                                .wrapper_weight_left.auto-height
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                .wrapper_price_left.auto-height
+                                    p 500 руб.
+                                    p 500 руб.
+                                    p 500 руб.
+                                .wrapper_text_right.auto-height
+                                    p Ягодный с имбирем
+                                    p Имбирный с лимоном и мятой
+                                .wrapper_weight_right.auto-height
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                .wrapper_price_right.auto-height
+                                    p 500 руб.
+                                    p 500 руб.
+                            h3 К чаю
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Варенье в ассортименте
+                                    p Мед  липовый
+                                .wrapper_weight_left.auto-height
+                                    p 100 мл.
+                                    p 150 мл.
+                                .wrapper_price_left.auto-height
+                                    p 150 руб.
+                                    p 200 руб.
+                                .wrapper_text_right
+                                    p Цветочный мед акации
+                                .wrapper_weight_right.auto-height
+                                    p 150 мл.
+                                .wrapper_price_right.auto-height
+                                    p 200 руб.
+                            h3 Безалкогольные напитки
+                            .wrapper_content
+                                .wrapper_text_left.auto-height
+                                    p Болтушка(мед, лимон, газ.вода)
+                                    p Кола/Фанта/Спрайт
+                                    p Лимонад дом. в ассорт-те
+                                    p Холод-й чай(черн-й или жасм-й)
+                                    p Ред Булл
+                                    p Дюшес
+                                    p Тархун
+                                .wrapper_weight_left.auto-height
+                                    p 500 мл.
+                                    p 250 мл.
+                                    p 1000 мл.
+                                    p 1000 мл.
+                                    p 250 мл.
+                                    p 500 мл.
+                                    p 500 мл.
+                                .wrapper_price_left.auto-height
+                                    p 300 руб.
+                                    p 150 руб.
+                                    p 400 руб.
+                                    p 400 руб.
+                                    p 200 руб.
+                                    p 100 руб.
+                                    p 100 руб.
+                                .wrapper_text_right.auto-height
+                                    p Боржоми
+                                    p Рычал-Су
+                                    p Вода «Гайштайнер» б/г
+                                    p Бон-Аква б/г
+                                    p Морс домашний
+                                    p Сок грейпфрутовый, свежевыжатый
+                                    p Сок апельсиновый, свежевыжатый
+                                .wrapper_weight_right.auto-height
+                                    p 500 мл.
+                                    p 500 мл.
+                                    p 500 мл.
+                                    p 330 мл.
+                                    p 500 мл.
+                                    p 200 мл.
+                                    p 200 мл.
+                                .wrapper_price_right.auto-height
+                                    p 200 руб.
+                                    p 150 руб.
+                                    p 200 руб.
+                                    p 150 руб.
+                                    p 150 руб.
+                                    p 200 руб.
+                                    p 200 руб.
+                    .service-item(data-id=3)
+                        .service_wrapper
+                            .wrapper_content.wrapper-content-service
+                                .wrapper_text_left.bani-item
+                                    p Рукавица
+                                    p Колпак классический
+                                    p Колпак «Усачевские бани»
+                                    p Коврик войлок
+                                    p Коврик деревянный
+                                    p Мыло дегтярное
+                                    p Мыло душистое «Спивак»
+                                    p Мыло жидкое  «Спивак»
+                                    p Гель для душа «Спивак»
+                                    p Шампунь «Спивак»
+                                    p Мочалка лыковая
+                                    p Пемза овальная
+                                .wrapper_price_left.bani-item
+                                    p 150 руб.
+                                    p 300 руб.
+                                    p 800 руб.
+                                    p 200 руб.
+                                    p 600 руб.
+                                    p 100 руб.
+                                    p 200 руб.
+                                    p 250 руб.
+                                    p 300 руб.
+                                    p 400 руб.
+                                    p 300 руб.
+                                    p 200 руб.
+                                .wrapper_text_right.bani-item
+                                    p Мочалка сизаль
+                                    p Мочалка рами овальная
+                                    p Мочалка полипропилен
+                                    p Массажер
+                                    p Гребень деревянный
+                                    p Полотенце махровое
+                                    p Халат махровый
+                                    p Сланцы
+                                    p Веник дубовый
+                                    p Веник березовый
+                                    p Прокат простыни
+                                    p Прокат полотенца
+                                .wrapper_price_right.bani-item
+                                    p 400 руб.
+                                    p 200 руб.
+                                    p 250 руб.
+                                    p 200 руб.
+                                    p 100 руб.
+                                    p 1400 руб.
+                                    p 3200 руб.
+                                    p 300 руб.
+                                    p 300 руб.
+                                    p 300 руб.
+                                    p 300 руб.
+                                    p 300 руб.
+                .image_block
+                    img(src="assets/img/action1.jpg", alt="")
+                    img(src="assets/img/action2.jpg", alt="")
+                    img(src="assets/img/action3.jpg", alt="")
+        include components/feedback.pug
+        include components/footer.pug
+        include components/form_message.pug
+
+        script(src="js/main.js")

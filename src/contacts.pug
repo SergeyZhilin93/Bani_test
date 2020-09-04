@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+
+    body
+        .overlay
+        include components/headerForOtherPages.pug
+        section.contact_block
+            .container
+                h1 Контакты
+                .content_block
+                    .map
+                        img.map_img(src="assets/img/map.jpg", alt="")
+                        .navigation
+                            .leg
+                                img(src="assets/img/map_red.svg", alt="")
+                                p Пешком от метро
+                            .car
+                                img(src="assets/img/map_brown.svg", alt="")
+                                p На машине
+                    .text_block
+                        h3 Хотите в баню? Приходите в Усачевские Бани! Мы работаем с 1934 года!
+                        .address_block
+                            p.bold Адрес:
+                            .address-box
+                                p ул. Усачёва, д. 10, стр. 1
+                                a(href="https://yandex.ru/maps/213/moscow/?ll=37.571730%2C55.728733&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.571461%252C55.728710%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%25A3%25D1%2581%25D0%25B0%25D1%2587%25D1%2591%25D0%25B2%25D0%25B0%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252010%25D1%25811%2520&z=18", target="_blank") На карте
+                        .phone_block
+                            p.bold Телефон:
+                            .tel
+                                a(href="tel:+7 (926) 949-34-36") +7 (926) 949-34-36
+                                a(href="tel:+7 (495) 740-84-36") +7 (495) 740-84-36
+                        .time_block
+                            p.bold Режим работы:
+                            .time
+                                p ПН 16:00 – 23:00
+                                p ВТ-ПТ 09:00 – 23:00
+                                p СБ-ВС 08:00 – 23:00
+
+                        .hashtags
+                            p #усачевскиебани
+                            p #усачеваулица
+
+
+        include components/feedback.pug
+        include components/form_message.pug
+
+        include components/footer.pug
+
+        script(src="js/main.js")

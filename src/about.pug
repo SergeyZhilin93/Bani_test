@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+    body
+        .overlay
+        include components/headerForOtherPages.pug
+
+        section.about_the_bath
+            .bg-box
+                .text-box
+                    h1 О бане
+                    p.top Кто не знаком с «Усачевскими банями»? Легендарная баня, в которую ходил ещё Юрий Алексеевич Гагарин, всегда пользовалась популярностью и отличалась сильными банными традициями. Баня славилась разнообразием целебных паров и открытыми, дружелюбными банщиками.
+                    p В 2018 году «Усачевские бани» преобразились после ремонта и превратились в современный банный комплекс с великолепным набором услуг для идеального банного отдыха, сохранив свои традиции и любовь постоянных клиентов.
+            .container
+                .images-box
+                    img(src="assets/img/about_the_bath1.jpg")
+                    img(src="assets/img/about_the_bath2.jpg")
+                    img(src="assets/img/about_the_bath3.jpg")
+                    img(src="assets/img/about_the_bath4.jpg")
+                    img(src="assets/img/about_the_bath5.jpg")
+                    img(src="assets/img/about_the_bath6.jpg")
+
+            include components/social.pug
+
+        include components/feedback.pug
+        include components/form_message.pug
+        include components/footer.pug
+
+        script(src="js/main.js")

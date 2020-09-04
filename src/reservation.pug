@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+    body
+        .overlay
+
+        include components/headerForOtherPages.pug
+
+        section.reservation.hide-mobil
+            .container
+                h1 Забронировать
+                h2 VIP
+                .vip-box
+                    .vip-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/vip1.jpg")
+                        h3 VIP 1
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 14 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 9 000 ₽
+                    .vip-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/vip2.jpg")
+                        h3 VIP 2
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 8 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 6 000 ₽
+                    .vip-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/vip3.jpg")
+                        h3 VIP 3
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 8 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 6 000 ₽
+                h2 Кабиенты
+                .cabients-box
+                    .cabinet-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/cabinet.jpg")
+                        h3 Кабинет 1
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 6 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 4 500 ₽
+                    .cabinet-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/cabinet.jpg")
+                        h3 Кабинет 2
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 6 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 4 500 ₽
+                    .cabinet-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/cabinet.jpg")
+                        h3 Кабинет 3
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 6 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 4 500 ₽
+                    .cabinet-item
+                        .img(script-role="feedback")
+                            img(src="assets/img/cabinet.jpg")
+                        h3 Кабинет 4
+                        .text-box
+                            .text-item
+                                p Кол-во человек
+                                p.info до 6 чел.
+                            .text-item
+                                p Время
+                                p.info 3 часа*
+                            .text-item
+                                p Стоимость
+                                p.price 4 500 ₽
+        section.reservation.show-mobil
+            h1 Забронировать
+            .tab-block
+                p.vip-tab.active(data-id=1) VIP
+                p.cabinets-tab(data-id=2) Кабинеты
+            .vip-content.reserv_content(data-id=1).active
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/vip1.jpg")
+                    .title-and-price
+                        h3 VIP 1
+                        p.price 9 000 ₽
+                    p.pryce-extension Продление - 3 000 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info до 14 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/vip2.jpg")
+                    .title-and-price
+                        h3 VIP 2
+                        p.price 6 000 ₽
+                    p.pryce-extension Продление - 2 000 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info  до 8 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/vip1.jpg")
+                    .title-and-price
+                        h3 VIP 3
+                        p.price 6 000 ₽
+                    p.pryce-extension Продление - 2 000 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info до 8 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+
+
+            .rooms-content.reserv_content(data-id=2)
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/cabinet.jpg")
+                    .title-and-price
+                        h3 Кабинет 1
+                        p.price 4 500 ₽
+                    p.pryce-extension Продление - 1 500 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info до 14 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/cabinet.jpg")
+                    .title-and-price
+                        h3 Кабинет 2
+                        p.price 4 500 ₽
+                    p.pryce-extension Продление - 1 500 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info  до 8 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/cabinet.jpg")
+                    .title-and-price
+                        h3 Кабинет 3
+                        p.price 4 500 ₽
+                    p.pryce-extension Продление - 1 500 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info до 14 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+                .vip-item
+                    .img(script-role="feedback")
+                        img(src="assets/img/cabinet.jpg")
+                    .title-and-price
+                        h3 Кабинет 4
+                        p.price 4 500 ₽
+                    p.pryce-extension Продление - 1 500 ₽ / час
+                    .text-box
+                        .text-item
+                            p.opacity Кол-во человек
+                            p.info до 14 чел.
+                        .text-item
+                            p.opacity Время
+                            p.info 3 часа*
+                    .btn-for-reservation(script-role="feedback") Забронировать
+
+        include components/feedback.pug
+        include components/form_message.pug
+
+        include components/footer.pug
+
+        script(src="js/main.js")

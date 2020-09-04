@@ -1,0 +1,3190 @@
+*
+    box-sizing border-box
+    :active, :focus
+        outline none
+a
+    text-decoration none
+    color #FFFFFF
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+body
+    position relative
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+.container
+    width: 80%
+    margin: 0 auto
+    z-index: 2
+    @media screen and (max-width: 1400px)
+        width 90%
+    @media screen and (max-width: 1024px)
+        width: 100%
+.btn
+    width: 292px
+    height 62px
+    font-family Museo Cyrl
+    font-size: 18px
+    border-radius: 8px
+    text-align: center
+    line-height: 62px;
+    cursor pointer
+    transition .2s linear
+    &:hover
+        transition .2s linear
+        transform: scale(1.02)
+.white_btn
+    background-color: #FFFFFF
+    color: #343434
+    @media screen and (max-width: 1024px)
+        margin auto
+.brown_btn
+    background-color: #BA8D6C
+    color: #FFFFFF
+    @media screen and (max-width: 1024px)
+        margin auto
+.header_main
+    padding-top 27px
+    position: absolute
+    width 100%
+    background linear-gradient(180deg, #1A1212 0%, rgba(0, 0, 0, 0) 100%);
+    border-bottom: none
+    z-index 3
+    @media screen and (max-width: 1024px)
+        padding: 0
+    .header-mobil
+        .logo-white
+            width: 64px
+            height: 64px
+            display: block
+            img
+                width: 100%
+                height: 100%
+        .logo
+            display: none
+            width: 64px
+            height: 64px
+            filter: invert(100%)
+            img
+                width: 100%
+                height: 100%
+        .burger-box
+            .burger-line
+                background-color: #FFFFFF
+    .header
+        display flex
+        justify-content space-between
+        align-items center
+        @media screen and (max-width: 1024px)
+            display: none
+        .social-logo
+            display flex
+            justify-content space-between
+            align-items: center
+            a
+                margin-right: 23px
+                &:last-of-type
+                    margin-right: 0
+                @media screen and (max-width: 1400px)
+                    margin-right 14px
+        nav
+            display flex
+            align-items center
+            justify-content: space-between
+            a
+                font-family Museo Sans Cyrl
+                font-size 14px
+                line-height 16px
+                letter-spacing 0.192px
+                text-transform uppercase
+                color: #FFFFFF
+                transition: .2s linear
+                margin-right: 1vw
+                &:hover
+                    transition: .2s linear
+                    color: #BA8D6C
+                &:last-of-type
+                    margin: 0
+            .logo-box
+                margin 0 32px
+        .contacts-box
+            margin-top 16px
+            text-align right
+            a
+                font-family Museo Cyrl
+                font-size 22px
+                line-height 31px
+                letter-spacing 1.05px
+                color: #FFFFFF
+                @media screen and (max-width: 1400px)
+                    font-size 18px
+                span
+                    color #BA8D6C
+            p
+                font-family Museo Sans Cyrl
+                font-size 14px
+                line-height 16px
+                color #FFFFFF
+header
+    background-color: #ffffff
+    padding 24px 0
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    @media screen and (max-width: 1024px)
+        padding: 0
+        position fixed
+        width: 100%
+        top 0
+        z-index 100
+    &.header_main
+        @media screen and (max-width: 1024px)
+            position fixed
+            top 0
+        .header-mobil
+            .close-block
+                .logo-white
+                    display block
+                    outline none
+    .header-mobil
+        display: none
+        @media screen and (max-width: 1024px)
+            display: flex
+            flex-direction: column
+        .close-block
+            display: flex
+            width: 100%
+            padding: 24px 16px
+            justify-content: space-between
+            align-items: center
+            &.open
+                background-color: #FFFFFF
+                .logo-white
+                    display none
+                .logo
+                    display block
+            .logo-white
+                display: none
+            .logo
+                width: 64px
+                height: 64px
+                filter: invert(100%)
+                img
+                    width: 100%
+                    height: 100%
+            .burger-box
+                width: 24px
+                height: 24px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-end
+                cursor pointer
+                position relative
+                &.open
+                    .burger-line
+                        top 7px
+                        width: 100%
+                        height: 2px
+                        background-color: #2E2C2B
+                        position: absolute
+                        &.top
+                            transform: rotate(45deg)
+                        &.middle
+                            transform: rotate(-45deg)
+                        &.bottom
+                            display: none
+
+            .burger-line
+                transition: transform linear 0.2s
+                width: 100%
+                height: 2px
+                background-color: #2E2C2B
+                &.bottom
+                    width: 50%
+        .open-block
+            height 0
+            max-height 582px
+            overflow: auto
+            background-color: #FFFFFF
+            transition: linear 0.4s
+            .content-open-block
+                height 100%
+                padding: 42px 0 64px 80px
+                nav
+                    display: flex
+                    flex-direction: column
+                    margin-bottom 65px
+                    a
+                        font-family: Museo Sans Cyrl;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #2E2C2B;
+                        margin-bottom 24px
+                .social-logo
+                    margin-bottom 31px
+                    display: flex;
+                    text-align: center;
+                    align-items: center
+                    img
+                        margin-right 28px
+                a.tel
+                    font-family: Museo Cyrl;
+                    font-size: 22px;
+                    line-height: 31px;
+                    letter-spacing: 1.05px;
+                    color: #2E2C2B;
+                    span
+                        color #BA8D6C
+                p
+                    font-family: Museo Sans Cyrl;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #2E2C2B;
+                    margin-bottom 64px
+    .header
+        display flex
+        justify-content space-between
+        align-items center
+        @media screen and (max-width: 1024px)
+            display: none
+        .social-logo
+            display flex
+            justify-content space-between
+            align-items: center
+            a
+                margin-right: 23px
+                &:last-of-type
+                    margin-right: 0
+                @media screen and (max-width: 1400px)
+                    margin-right 14px
+        nav
+            display flex
+            align-items center
+            justify-content: space-between
+            a
+                font-family Museo Sans Cyrl
+                font-size 14px
+                line-height 16px
+                letter-spacing 0.192px
+                text-transform uppercase
+                color: #000000
+                transition: .2s linear
+                margin-right: 2vw
+                &:hover
+                    transition: .2s linear
+                    color: #BA8D6C
+                &:last-of-type
+                    margin: 0
+
+        .logo-box
+            margin 0
+            @media screen and (max-width: 1500px)
+                margin 0 20px
+            img
+                border-radius: 50%
+                background-color: #BA8D6C
+                width: 132px
+                height 132px
+        .contacts-box
+            margin-top 16px
+            text-align right
+            a
+                font-family Museo Cyrl
+                font-size 22px
+                line-height 31px
+                letter-spacing 1.05px
+                color: #000000
+                @media screen and (max-width: 1400px)
+                    font-size 18px
+                span
+                    color #BA8D6C
+            p
+                font-family Museo Sans Cyrl
+                font-size 14px
+                line-height 16px
+                color #151515
+.main-text-block
+    position absolute
+    left 10%
+    z-index 2
+    @media screen and (max-width: 1400px)
+        left 5%
+    @media screen and (max-width: 1024px)
+        left 0
+        width 100%
+    h1
+        padding-top 291px
+        font-family: Museo Cyrl;
+        font-size: 80px;
+        line-height: 90px;
+        color: #FFFFFF;
+        z-index: 2
+        @media screen and (max-width: 1400px)
+            font-size 60px
+        @media screen and (max-width: 1024px)
+            font-size: 56px;
+            line-height: 64px;
+            padding-top 108px
+            margin-left 16px
+            margin-bottom 29px
+        @media screen and (max-width: 359px)
+            font-size: 48px;
+    p
+        font-family Lato
+        font-size: 20px
+        line-height: 32.5px
+        color #FFFFFF
+        width: 592px
+        @media screen and (max-width: 1400px)
+            font-size 18px
+        @media screen and (max-width: 1024px)
+            width 100%
+            font-size: 20px;
+            line-height: 26px;
+            padding 0 16px
+    .btn_block
+        display: flex
+        padding-top: 161px
+        @media screen and (max-width: 1024px)
+            display: block
+            padding 24px 16px 0 16px
+        .white_btn
+            @media screen and (max-width: 1024px)
+                margin-bottom 24px
+        .btn_marg
+            margin-left: 32px
+            @media screen and (max-width: 1024px)
+                display block
+                margin auto
+
+
+
+.main-baner-slider
+    .slide-item
+        background-size cover
+        background-position: center
+        background-repeat: no-repeat
+        height: 100vh
+        position relative
+        z-index 1
+        @media screen and (max-width: 1024px)
+            // height 1040px
+            height 670px
+        .gradient
+            position: absolute
+            background: linear-gradient(89.71deg, #000000 29.26%, rgba(0, 0, 0, 0) 60.51%);
+            opacity 0.5
+            left: 0
+            top 0
+            height 100%
+            width 100%
+            z-index -1
+    .slick-dots
+        bottom 31px
+        .slick-active
+            button
+                &:before
+                    opacity 1
+        li
+            width: 38px
+            height 5px
+            button
+                &:before
+                    content: ""
+                    width: 38px
+                    height 2px
+                    color: #ffffff
+                    background-color:#ffffff
+                    opacity 0.4
+
+// .slick-dotted.slick-slider
+//     margin-bottom: 0
+
+.message_of_temperature
+    position: absolute
+    right 10%
+    top: 335px
+    padding: 29px 35px
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    display: none
+    @media screen and (max-width: 1400px)
+        right 5%
+        padding: 20px 25px
+    @media screen and (max-width: 1024px)
+        max-width 353px
+        width 95%
+        right 0
+        left 0
+        top 695px
+        margin auto
+    h3
+        font-family Museo Cyrl;
+        font-size: 22px
+        letter-spacing: 0.264px
+        color: #161616
+        padding-bottom: 22px
+    p
+        font-family Museo Cyrl
+        font-size: 18px
+        letter-spacing: 0.264px
+        color: #161616
+        &:nth-child(3)
+            padding: 16px 0
+        span
+            color #F22B2B
+    .brown_btn
+        margin-top: 22px
+        box-shadow: 0px 10px 40px #622C05
+        @media screen and (max-width: 1024px)
+            width 90%
+            max-width 265px
+    &:after
+        content: ''
+        position: absolute
+        background-image: url("../assets/img/par.svg")
+        width: 82px
+        height 82px
+        right 26px
+        top: -41px
+.description_block
+    background-color: white
+    padding: 104px 0 90px 0
+    @media screen and (max-width: 1024px)
+        padding 40px 16px 99px 16px
+    .description
+        display: flex
+        align-items: flex-start
+        justify-content space-between
+        @media screen and (max-width: 1024px)
+            text-align center
+            display block
+        .img-wrapper
+            width: 232px
+            height: 232px
+            display: flex
+            @media screen and (max-width: 1024px)
+                width 160px
+                height: 160px
+                margin: 0 auto 40px
+            img
+                width: 100%
+        .text_block
+            padding-left: 120px
+            width: calc(100% - 232px)
+            @media screen and (max-width: 1024px)
+                width: 100%
+                padding 0
+            p
+                font-family Museo Cyrl
+                font-size: 22px
+                color: #111F25
+                line-height: 34px;
+                @media screen and (max-width: 1024px)
+                    text-align left
+                    font-size: 18px;
+                    line-height: 26px;
+                &:nth-child(2)
+                    padding-top: 48px
+                    @media screen and (max-width: 1024px)
+                        padding-top: 36px
+.branches-slider
+    .slider-item
+        padding: 184px 0 252px 0
+        background-size cover
+        background-position: center
+        background-repeat: no-repeat
+        position relative
+        z-index 1
+        @media screen and (max-width: 1024px)
+            padding-top 24px
+            padding-bottom 54px
+        .gradient
+            position: absolute
+            background: linear-gradient(89.36deg, #000000 26.66%, rgba(0, 0, 0, 0) 80.27%);
+            opacity 0.5
+            left: 0
+            top 0
+            height 100%
+            width 100%
+            z-index -1
+        .gradient_bottom
+            position: absolute
+            background: linear-gradient(180deg, #1A1212 0%, rgba(0, 0, 0, 0) 100%);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            opacity 0.7
+            left: 0
+            bottom 0
+            height 287px
+            width 100%
+            z-index -1
+        .container
+            @media screen and (max-width: 1024px)
+                padding 0 16px
+            h2
+                font-family Museo Cyrl
+                font-size: 64px
+                color: #ffffff
+                letter-spacing: 3px
+                @media screen and (max-width: 1024px)
+                    display none
+            p
+                font-family Museo Sans Cyrl Light
+                font-size: 20px
+                color: #ffffff
+                letter-spacing: 0.24px
+                padding: 21px 0 80px 0
+                width: 611px
+                @media screen and (max-width: 1024px)
+                    width 100%
+                    margin-bottom 67px
+                    font-size: 16px;
+                    line-height: 22px
+        .info_block
+            display: flex
+            align-items: flex-start
+            justify-content space-between
+            width: 652px
+            @media screen and (max-width: 1024px)
+                display block
+            .info
+                h4
+                    font-family Museo Cyrl
+                    font-size: 24px
+                    letter-spacing: 0.22px
+                    color: #ffffff
+                    padding-bottom: 27px
+                    @media screen and (max-width: 1024px)
+                        font-size: 22px;
+                        line-height: 24px;
+                        padding-bottom 23px
+                .datetime-block
+                    @media screen and (max-width: 1024px)
+                        // display flex
+                        margin-bottom 33px
+                .datetime
+                    display: flex
+                    align-items: center
+                    justify-content space-between
+                    width: 185px
+                    padding-bottom: 22px
+                    &.highest-rank
+                        width 340px
+                    @media screen and (max-width: 1024px)
+                        margin-right 24px
+                span
+                    font-family Museo Sans Cyrl Light
+                    font-size: 16px
+                    letter-spacing: 0.26px
+                    color: #ffffff
+                    display block
+                    @media screen and (max-width: 1024px)
+                        margin-right 12px
+                        font-size: 15px;
+                .price
+                    padding-bottom: 12px
+                    @media screen and (max-width: 1024px)
+                        font-family: Museo Sans Cyrl;
+                        font-size: 20px;
+                        line-height: 18px;
+    .slick-dots
+        width: 100%
+        bottom 68px
+        padding: 0 10%
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        display flex
+        justify-content space-between
+        padding: 0 16px
+        @media screen and (max-width: 1024px)
+            justify-content: flex-start
+            bottom 104%;
+            width calc(100% - 16px)
+            border-top: none
+            padding 0
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            left 16px
+            overflow: scroll
+            scrollbar-width: none
+            &::-webkit-scrollbar
+                display none
+        li.slick-active
+            width: 216px
+            height 4px
+            border-top: 3px solid rgba(255, 255, 255, 1);
+            opacity 1
+            @media screen and (max-width: 1024px)
+                border-top: none
+                height auto
+                min-width 190px
+                border-bottom: 4px solid rgba(0, 0, 0, 1);
+                overflow: scroll
+                scrollbar-width: none
+        li
+            width: 216px
+            color: #ffffff
+            font-family Museo Sans Cyrl
+            font-size: 18px
+            margin-top: -3px
+            padding-top: 37px
+            @media screen and (max-width: 1024px)
+                color #000000
+                min-width 190px
+                padding 0 0 14px 0
+                height auto
+                margin 0 20px 0 0
+            button
+                &:before
+                    content: ""
+                    width: 38px
+                    height 2px
+                    color: #ffffff
+                    background-color:#ffffff
+                    @media screen and (max-width: 1024px)
+                        color #000000
+                        background-color:#000000
+.services_block
+    background-color: #ffffff
+    padding: 84px 0
+    @media screen and (max-width: 1024px)
+        padding 0
+    h2
+        font-family Museo Cyrl
+        font-size: 64px
+        color: #151515
+        letter-spacing: 3px
+        padding-bottom: 80px
+        @media screen and (max-width: 1024px)
+            font-size: 28px;
+            line-height: 28px;
+            padding-bottom 40px
+            padding-top 20px
+            margin-left 16px
+            letter-spacing: 0
+    .content_block
+        display: flex
+        justify-content space-between
+        @media screen and (max-width: 1024px)
+            display block
+        .price_block
+            width: 50%
+            display: flex
+            align-items: flex-start
+            justify-content space-between
+            @media screen and (max-width: 1024px)
+                width 100%
+                padding 0 16px
+                margin-bottom 40px
+            span
+                font-family Lato
+                font-size: 15px
+                line-height: 28px
+                opacity 0.7
+                color: #000000
+                padding-bottom: 6px
+            p
+                font-family Museo Cyrl
+                font-size: 20px
+                color: #151515
+                // margin-top: 22px
+                height 40px
+                @media screen and (max-width: 1024px)
+                    font-size: 16px;
+                    line-height: 18px;
+
+
+            .left
+                width: 40%
+                @media screen and (max-width: 1400px)
+                    width 37%
+                @media screen and (max-width: 1024px)
+                    width 50%
+            .middle
+                @media screen and (max-width: 1400px)
+                    width 30%
+                @media screen and (max-width: 1024px)
+                    display none
+            .middle, .right
+                width 25%
+            .right
+                @media screen and (max-width: 1400px)
+                    width 23%
+                @media screen and (max-width: 1024px)
+                    width 50%
+                    text-align right
+                    padding-right 40px
+                .bold
+                    font-family: Museo Sans Cyrl Bold
+                    font-size: 20px
+                    color: #BA8D6C
+                    @media screen and (max-width: 1024px)
+                        font-size: 16px;
+        .image_block
+            background: url("../assets/img/service.jpg") bottom no-repeat
+            background-size: cover
+            width: 50%
+            padding-left 40px
+            display: flex
+            align-items: center
+            @media screen and (max-width: 1024px)
+                width 100%
+                padding 71px 0 40px
+                justify-content center
+                margin-bottom 64px
+            h3
+                font-family Museo Cyrl
+                font-size: 42px
+                color: #ffffff
+                padding-bottom: 37px
+                width: 70%
+                @media screen and (max-width: 1024px)
+                    font-size: 28px;
+                    line-height: 28px;
+                    width 100%
+                    padding-bottom 73px
+.slider_photo
+    position relative
+    width 100%
+    @media screen and (max-width: 1024px)
+        margin-bottom 64px
+    .slider-item
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        height 630px
+        width 100%
+        @media screen and (max-width: 1024px)
+            height 460px
+        @media screen and (max-width: 767px)
+            height 260px
+        img
+            width 100%
+    .slick-arrow
+        z-index 3
+        opacity 1
+        width: 32px
+        height 17.5px
+        top 50%
+        &:before
+            left 0
+            position absolute
+            width 100%
+            height 100%
+            content ""
+            background-repeat no-repeat
+            background-size cover
+            background-image: url("../assets/img/Vector.svg")
+        &.slick-prev
+            left 10%
+        &.slick-next
+            right 10%
+            &:before
+                transform rotate(-180deg)
+    .slick-dots
+        bottom 24px
+        .slick-active
+            button
+                &:before
+                    opacity 1
+        li
+            width: 38px
+            height 5px
+            button
+                &:before
+                    content: ""
+                    width: 38px
+                    height 2px
+                    color: #ffffff
+                    background-color:#ffffff
+                    opacity 0.4
+.action_block
+    background-color: #ffffff
+    padding: 78px 0 91px 0
+    @media screen and (max-width: 1024px)
+        padding 0
+        margin-bottom 64px
+    h2
+        font-family Museo Cyrl
+        font-size: 64px
+        color: #151515
+        padding-bottom: 85px
+        @media screen and (max-width: 1024px)
+            font-size: 28px;
+            line-height: 28px;
+            margin-left 16px
+            padding-bottom 40px
+    .action_slider
+        .slick-track
+            margin-left 0
+        .slider-item
+            padding 0 16px
+            @media screen and (max-width: 767px)
+                padding 0
+            .img
+                display: block
+                height 366px
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                position relative
+                cursor: pointer
+                &:hover
+                    &:before
+                        display block
+                    &:after
+                        display block
+                &:before
+                    display: none
+                    content: "Подробнее"
+                    font-family Museo Cyrl
+                    border: 1px solid #ffffff
+                    padding: 14px 0px
+                    color: #ffffff
+                    border-radius: 4px
+                    position: absolute
+                    top: calc(50% - 24px);
+                    left 0
+                    right 0
+                    width: 203px
+                    margin: auto
+                    text-align: center
+                    z-index 2
+                &:after
+                    display: none
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height 100%
+                    background: rgba(0, 0, 0, 0.58)
+            h4
+                font-family Museo Cyrl
+                font-size: 20px
+                color: #151515
+                padding: 21px 0
+                @media screen and (max-width: 1024px)
+                    font-size: 18px;
+                    line-height: 26px;
+                    padding 24px 16px 16px 16px
+            .table-block
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 6px;
+                @media screen and (max-width: 1024px)
+                    p
+                        margin-bottom: 4px
+            p
+                font-family Museo Sans Cyrl Light
+                font-size: 14px
+                color: #151515
+                @media screen and (max-width: 1024px)
+                    padding 0 16px
+                    margin-bottom 40px
+        .slick-arrow
+            z-index 3
+            opacity 1
+            width: 32px
+            height 17.5px
+            top -117px
+            &:before
+                left 0
+                position absolute
+                width 100%
+                height 100%
+                content ""
+                background-repeat no-repeat
+                background-size cover
+                background-image: url("../assets/img/VectorB.svg")
+            &.slick-prev
+                left auto
+                right 126px
+            &.slick-next
+                right 40px
+                &:before
+                    transform rotate(-180deg)
+    .btn
+        display none
+        @media screen and (max-width: 1024px)
+            display block
+            font-family: Museo Cyrl;
+            font-size: 20px;
+            line-height: 19px;
+            color: #BA8D6C;
+            border-radius: 4px;
+            margin auto
+            width 283px
+            height 62px
+            border: 2px solid #BA8D6C;
+            padding-top 20px
+.social
+    margin-bottom: 122px
+    @media screen and (max-width: 1024px)
+        margin-bottom 64px
+    .social-block
+        text-align center
+        h2
+            font-family: Museo Cyrl;
+            font-size: 64px;
+            line-height: 90px;
+            color: #151515;
+            margin-bottom: 75px
+            @media screen and (max-width: 1024px)
+                font-size: 28px;
+                line-height: 28px;
+                margin-bottom: 40px
+        .social-icon-block
+            display flex
+            align-items: flex-end
+            justify-content: center
+            margin-bottom 75px
+            @media screen and (max-width: 1024px)
+                display: block
+            .instagram-box, .vk-box, .odnoklassniki-box
+                margin-right 112px
+            .instagram-box, .vk-box, .odnoklassniki-box, .youtube-box
+                @media screen and (max-width: 1024px)
+                    margin 40px 0 0 0
+                p
+                    margin-top 16px
+                    font-family: Museo Sans Cyrl;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.24px;
+        .photo-block
+            display: flex
+            width: 100%
+            justify-content: space-between
+            @media screen and (max-width: 1024px)
+                display: none
+            .photo-item
+                width: 20%
+                max-width 330px
+                img
+                    width: 100%
+                    margin-bottom 14px
+                .like-box
+                    display flex
+                    align-items: center
+                    margin-bottom 14px
+                    img
+                        width: 21px
+                        margin-bottom 0
+                        margin-left: 2px
+                        margin-right: 10px
+                    p
+                        padding-top: 2px
+                        font-family: Museo Sans Cyrl;
+                        font-size: 14px;
+                        color: #151515;
+                .text-box
+                    padding-right: 20px
+                    @media screen and (max-width: 1400px)
+                        padding-right: 0
+                    p
+                        font-family: Museo Sans Cyrl Light;
+                        font-size: 14px;
+                        color: #151515;
+                        text-align: left;
+                        margin-bottom 16px
+section
+    @media screen and (max-width: 1024px)
+        margin-top 112px
+        &.index
+            margin-top 0
+    h1
+        font-family Museo Cyrl
+        font-size: 64px
+        color: #151515
+        letter-spacing: 3px
+        @media screen and (max-width: 1024px)
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom 24px
+.service
+    padding-top: 58px
+    padding-bottom: 65px
+    background-color: #ffffff
+    @media screen and (max-width: 1024px)
+        padding-top: 8px
+    h1
+        @media screen and (max-width: 1024px)
+            font-size: 32px;
+            line-height: 32px;
+            margin-left 16px
+    .service-paginator
+        display: flex
+        padding-top 44px
+        border-bottom 1px solid rgba(0, 0, 0, 0.4)
+        overflow: auto
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display none
+        @media screen and (max-width: 1024px)
+            margin 0 16px
+            padding: 0
+        p
+            font-family: Museo Cyrl;
+            font-size: 22px;
+            border none
+            margin-right: 135px
+            cursor pointer
+            white-space nowrap
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            &.active
+                border-bottom: 4px solid #000000
+                padding-bottom: 28px
+                @media screen and (max-width: 1270px)
+                    padding-bottom: 12px
+            @media screen and (max-width: 1270px)
+                padding-bottom: 12px
+                font-size: 16px;
+                line-height: 38px;
+                padding: 0
+                margin-right 60px
+        // .slick-list
+        //     padding 0 0 0 1px !important
+        //     @media screen and (max-width: 1270px)
+        //         width auto !important
+        //         overflow scroll
+        //         &::-webkit-scrollbar
+        //             display none
+        //     .slick-track
+        //             @media screen and (max-width: 1024px)
+        //                 width 500px !important
+        //                 margin-left 0
+        //     .slider-item
+        //         width: auto !important
+        //         p
+        //             font-family: Museo Cyrl;
+        //             font-size: 22px;
+        //             border none
+        //             padding: 0 36px 21px;
+        //             margin-right: 135px
+        //             cursor pointer
+        //             @media screen and (max-width: 1270px)
+        //                 font-size: 16px;
+        //                 line-height: 38px;
+        //                 padding 0 12px 0 12px
+        //                 margin-right 21px
+        //         &.slick-current
+        //             p
+        //                 border-bottom: 4px solid #000000;
+    .service-block
+        .service-item
+            display: none
+            &.active
+                display: block
+            .service_wrapper
+                display: block
+                padding-top: 48px
+                padding-bottom: 48px
+                @media screen and (max-width: 1024px)
+                    padding 0 16px
+                    padding-top 24px
+                .wrapper_links
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                    .links_cont
+                        display: flex
+                        justify-content space-between
+                        width 50%
+                        .active
+                            border-bottom: 4px solid #000000;
+                        p
+                            font-family Museo Cyrl
+                            font-size: 18px
+                            color #000
+                            padding-bottom: 34px
+                            cursor pointer
+                h3
+                    font-family Museo Cyrl
+                    font-size: 26px
+                    margin-bottom 30px
+                .wrapper_content
+                    display: grid
+                    grid-template-areas: "text_left weight_left price_left text_right weight_right price_right"
+                    margin-bottom: 36px
+                    grid-template-columns: minmax(25%, 2fr) minmax(140px, 1fr) 1.5fr minmax(25%, 2fr) minmax(140px, 1fr) 1.5fr
+                    @media screen and (max-width: 1600px)
+                        display flex
+                        flex-wrap: wrap
+                        padding-bottom 40px
+                    // p
+                    //     height 36px
+                    //     overflow: hidden
+                    .wrapper_text_left
+                        grid-area: text_left
+                        @media screen and (max-width: 1600px)
+                            width 40%
+                        p
+                            font-family Museo Cyrl
+                            font-size: 18px
+                            color: #151515
+                            line-height 22px
+                            @media screen and (max-width: 1600px)
+                                font-size: 16px;
+                    .auto-height
+                        @media screen and (max-width: 767px)
+                            p
+                                margin-bottom 16px
+                                line-height 22px
+
+                    .wrapper_weight_left
+                        grid-area: weight_left
+                        text-align: center
+                        @media screen and (max-width: 1600px)
+                            width 30%
+                        p
+                            font-family Museo Sans Cyrl Bold
+                            font-size: 18px
+                            color: #BA8D6C
+                            line-height 22px
+                            @media screen and (max-width: 1024px)
+                                font-size: 16px
+                    .wrapper_price_left
+                        grid-area: price_left
+                        text-align: right
+                        padding-right: 36px
+                        @media screen and (max-width: 1600px)
+                            width 30%
+                            padding 0
+                        p
+                            font-family Museo Sans Cyrl Bold
+                            font-size: 18px
+                            color: #BA8D6C
+                            line-height 22px
+                            @media screen and (max-width: 1024px)
+                                font-size: 16px;
+                    .wrapper_text_right
+                        grid-area: text_right
+                        @media screen and (max-width: 1600px)
+                            width 40%
+                        p
+                            font-family Museo Cyrl
+                            font-size: 18px
+                            color: #151515
+                            line-height 22px
+                            @media screen and (max-width: 1024px)
+                                font-size: 16px;
+                    .wrapper_weight_right
+                        grid-area: weight_right
+                        text-align: center
+                        @media screen and (max-width: 1600px)
+                            width 30%
+                        p
+                            font-family Museo Sans Cyrl Bold
+                            font-size: 18px
+                            color: #BA8D6C
+                            line-height 22px
+                            @media screen and (max-width: 1024px)
+                                font-size: 16px
+                    .wrapper_price_right
+                        grid-area: price_right
+                        text-align: right
+                        @media screen and (max-width: 1600px)
+                            width 30%
+                        p
+                            font-family Museo Sans Cyrl Bold
+                            font-size: 18px
+                            color: #BA8D6C
+                            line-height 22px
+                            @media screen and (max-width: 1024px)
+                                font-size: 16px;
+                    .wrapper_text_left, .wrapper_text_right
+                        &.bani-item
+                            @media screen and (max-width: 1600px)
+                                width 70%
+                            p
+                                line-height 28px
+                    .wrapper_price_left, .wrapper_price_right
+                        &.bani-item
+                            p
+                                text-align left
+                                line-height 28px
+    .image_block
+        display: grid
+        grid-template-columns: repeat(3, minmax(200px, 500px));
+        grid-gap: 36px
+        @media screen and (max-width: 767px)
+            display: block
+        img
+            width: 100%
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            &:nth-child(even)
+                @media screen and (max-width: 767px)
+                    margin 24px 0
+
+.gallery_block
+    padding-top: 58px
+    padding-bottom: 65px
+    background-color: #ffffff
+    @media screen and (max-width: 1024px)
+        padding 8px 0 64px 0
+    h1
+        font-family Museo Cyrl
+        font-size: 64px
+        color: #151515
+        letter-spacing: 3px
+        @media screen and (max-width: 1024px)
+            font-size: 32px;
+            line-height: 32px;
+            margin-left: 16px
+    .image_block
+        padding-top: 80px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 36px
+        @media screen and (max-width: 1024px)
+            grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width: 767px)
+            display block
+            padding 0
+        .img-gal
+            height 400px
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            @media screen and (max-width: 1400px)
+                height 300px
+            @media screen and (max-width: 1024px)
+                margin-bottom 24px
+    .pagination
+        display: flex
+        align-items: center
+        justify-content center
+        padding-top: 73px
+        .left
+            margin-right: 42px
+            cursor pointer
+        .right
+            transform: rotate(180deg)
+            margin-left: 42px
+            cursor pointer
+        span
+            font-family Museo Cyrl
+            font-size: 24px
+            color: #151515
+            margin: 0 14px
+            cursor pointer
+        .active
+            color: #BA8D6C
+.fancybox-bg
+    background-color rgba(0,0,0,0.8)
+// .fancybox-inner
+//     bottom: 0 !important
+//     .fancybox-stage
+//         .fancybox-slide
+//             padding 0
+// .fancybox-thumbs
+//     position: absolute
+//     top: 600px;
+//     width: auto;
+//     margin: auto
+//     bottom: 0;
+//     left: 0;
+//     right : 0;
+//     height: auto
+//     padding: 10px 10px 5px 10px;
+//     box-sizing: border-box;
+//     background-color: inherit
+// .fancybox-thumbs__list a:before
+//     border: 4px solid rgba(0,0,0,0.8)
+// .fancybox-thumbs__list
+//     margin: 0 auto
+// .fancybox-thumbs__list a
+//     width: 131px
+//     height: 131px
+// .fancybox-show-thumbs .fancybox-inner
+//     right: 0;
+//     bottom: 95px;
+// .fancybox-button
+//     background: transparent
+// .fancybox-infobar
+//     display: none
+// .fancybox-navigation .fancybox-button--arrow_left
+//     left 20%
+// .fancybox-navigation .fancybox-button--arrow_right
+//     right 20%
+// .fancybox-content
+//     position relative
+//     &:after
+//         content: ""
+//         position: absolute
+//         background-image: url("../assets/img/fan_close.svg")
+//         background-size: contain
+//         background-repeat: no-repeat
+//         background-position: center
+//         width: 40px
+//         height 40px
+//         top: -44px
+//         right -49px
+
+.reservation
+    &.hide-mobil
+        @media screen and (max-width: 1024px)
+            display none
+    &.show-mobil
+        display none
+        @media screen and (max-width: 1024px)
+            display block
+    h1
+        font-family: Museo Cyrl;
+        font-size: 64px;
+        color: #151515;
+        margin-bottom 52px
+        margin-top 60px
+    h2
+        font-family: Museo Cyrl;
+        font-size: 32px;
+        letter-spacing: 0.216px;
+        color: #111F25;
+        margin-bottom 35px
+    h3
+        font-family: Museo Cyrl;
+        font-size: 24px;
+        color: #151515;
+        margin-bottom 32px
+        margin-bottom 32px
+        margin-top: 30px
+    .img
+        position: relative
+        cursor: pointer
+        &:hover
+            &:before
+                content: 'Забронировать'
+                position: absolute
+                font-family: Museo Cyrl;
+                font-size: 20px;
+                line-height: 19px;
+                color: #FFFFFF;
+                top 0
+                bottom: 0
+                left 0
+                right 0
+                justify-content: center
+                margin: auto
+                width: 55%
+                min-width max-content
+                padding: 0 6px
+                height 62px
+                display: flex
+                align-items: center
+                border: 2px solid #FFFFFF;
+                border-radius: 4px
+                z-index 2
+            &:after
+                content: ''
+                position: absolute
+                background-color rgba(0, 0, 0, 0.58)
+                opacity: 0.89;
+                top 0
+                bottom: 0
+                left 0
+                right 0
+                z-index 1
+
+    .vip-box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 36px
+        margin-bottom 72px
+        .vip-item
+            width: 100%
+            max-width 509px
+            img
+                width: 100%
+            .text-box
+                display: flex
+                justify-content: space-between
+                padding-right: 57px
+                @media screen and (max-width: 1400px)
+                    padding-right: 0
+                .text-item
+                    p
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        letter-spacing: 0.264px;
+                        color: #000000;
+                        opacity: 0.7;
+                        @media screen and (max-width: 1600px)
+                            font-size: 12px
+                        &.info
+                            font-family: Museo Sans Cyrl;
+                            font-size: 20px;
+                            color: #111F25;
+                            opacity 1
+                            @media screen and (max-width: 1600px)
+                                font-size: 16px
+                        &.price
+                            color: #BA8D6C
+                            font-size: 20px
+                            @media screen and (max-width: 1600px)
+                                font-size: 16px
+    .cabients-box
+        display: grid
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px
+        margin-bottom 83px
+        @media screen and (max-width: 1400px)
+            grid-template-columns: repeat(3, 1fr);
+        .cabinet-item
+            img
+                width: 100%
+            .text-box
+                width: 100%
+                display: flex
+                justify-content: space-between
+                .text-item
+                    p
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        letter-spacing: 0.264px;
+                        color: #000000;
+                        opacity: 0.7;
+                        @media screen and (max-width: 1600px)
+                            font-size: 12px
+                        &.info
+                            font-family: Museo Sans Cyrl;
+                            font-size: 20px;
+                            color: #111F25;
+                            opacity 1
+                            @media screen and (max-width: 1600px)
+                                font-size: 16px
+                        &.price
+                            color: #BA8D6C
+                            font-size: 20px
+                            @media screen and (max-width: 1600px)
+                                font-size: 16px
+    &.show-mobil
+        h1
+            font-family: Museo Cyrl;
+            font-size: 32px;
+            line-height: 32px;
+            color: #2E2C2B;
+            padding-top 8px
+            margin-bottom 18px
+            margin-left 16px
+        .tab-block
+            display flex
+            margin-left 16px
+            margin-bottom 14px
+            p
+                margin-right 55px
+                font-family: Museo Cyrl;
+                font-size: 20px;
+                line-height: 24px;
+                color: #2E2C2B;
+                opacity: 0.5;
+                &.active
+                    opacity 1
+        .vip-content, .rooms-content
+            margin-bottom 64px
+            display none
+            &.active
+                display block
+            .vip-item
+                width 70%
+                margin auto
+                @media screen and (max-width: 767px)
+                    width 100%
+                .img
+                    margin-bottom 33px
+                    img
+                        width 100%
+                .title-and-price
+                    padding 0 16px
+                    display flex
+                    justify-content: space-between
+                    text-align: center
+                    margin-bottom 5px
+                    h3
+                        font-family: Museo Cyrl;
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: #2E2C2B;
+                        margin 0
+                    p
+                        font-family: Museo Sans Cyrl;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #BA8D6C;
+                p.pryce-extension
+                    font-family: Museo Cyrl;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #2E2C2B;
+                    opacity: 0.7;
+                    padding 0 16px
+                    text-align: right
+                    margin-bottom 21px
+                .text-box
+                    display grid
+                    grid-template-columns: 2fr 3fr
+                    padding 0 16px
+                    margin-bottom 31px
+                    .text-item
+                        p.opacity
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #000000;
+                            opacity: 0.7;
+                            margin-bottom 12px
+                        p.info
+                            font-family: Museo Cyrl;
+                            font-size: 15px;
+                            line-height: 15px;
+                            color: #2E2C2B;
+                            opacity 1
+                .btn-for-reservation
+                    font-family: Museo Cyrl;
+                    font-size: 20px;
+                    line-height: 19px;
+                    color: #BA8D6C;
+                    border-radius: 4px;
+                    border: 2px solid #BA8D6C;
+                    width 283px
+                    height 62px
+                    padding-top 21px
+                    text-align center
+                    margin auto
+                    margin-bottom 32px
+
+
+
+.contact_block
+    padding-top: 58px
+    padding-bottom: 65px
+    background-color: #ffffff
+    @media screen and (max-width: 1024px)
+        padding 8px 16px 64px 16px
+    .content_block
+        display: flex
+        align-items: center
+        @media screen and (max-width: 1024px)
+            display block
+        .map
+            width: 80%
+            margin-right: 84px
+            @media screen and (max-width: 1024px)
+                width 100%
+                margin-right 0
+                margin-bottom 64px
+            .map_img
+                max-width 100%
+                @media screen and (max-width: 1024px)
+                    margin-bottom 24px
+            .navigation
+                text-align: right
+                p
+                    font-family Museo Sans Cyrl
+                    font-size: 14px
+                    color: #000000
+                .leg, .car
+                    display: flex
+                    width: 250px
+                    margin: 0 0 0 auto
+                .leg
+                    padding-bottom: 12px
+                    img
+                        padding-right: 27px
+                .car
+                    img
+                        padding-right: 27px
+        .text_block
+            h3
+                font-family Museo Cyrl
+                font-size: 24px
+                color: #111F25
+                padding-bottom: 77px
+                line-height: 33px;
+                @media screen and (max-width: 1024px)
+                    font-size: 18px;
+                    line-height: 26px;
+            .address_block
+                display: flex
+                align-items: flex-end
+                @media screen and (max-width: 1024px)
+                    display block
+                p
+                    font-family Museo Sans Cyrl Light
+                    font-size: 22px
+                    color: #111F25
+                    @media screen and (max-width: 1600px)
+                        font-size 18px
+                    @media screen and (max-width: 1024px)
+                        font-size: 16px;
+                        line-height: 33px;
+                .address-box
+                    display flex
+                    @media(min-width: 1025px) and (max-width: 1600px)
+                        align-items flex-end
+                a
+                    font-family Museo Sans Cyrl
+                    font-size: 16px
+                    color: #BA8D6C
+                    text-decoration: underline
+                    margin-left: 136px
+                    line-height: 33px;
+                    transition .2s linear
+                    @media screen and (max-width: 1600px)
+                        margin-left: 40px
+                        line-height: inherit;
+                    @media screen and (max-width: 1024px)
+                        margin-left 60px
+                    &:hover
+                        text-decoration: none
+                        transition .2s linear
+            .phone_block
+                display: flex
+                padding: 24px 0
+                @media screen and (max-width: 1024px)
+                    display block
+                p
+                    font-family Museo Sans Cyrl Light
+                    font-size: 22px
+                    color: #111F25
+                    @media screen and (max-width: 1600px)
+                        font-size 18px
+                    @media screen and (max-width: 1024px)
+                        font-size: 16px;
+                        line-height: 33px;
+                .tel
+                    display: flex
+                    flex-wrap: wrap
+                    a
+                        font-family Museo Sans Cyrl Light
+                        font-size: 22px
+                        color: #111F25
+                        width: 100%
+                        @media screen and (max-width: 1600px)
+                            font-size 18px
+                        @media screen and (max-width: 1024px)
+                            font-size: 16px;
+                            line-height: 33px;
+            .time_block
+                display: flex
+                @media screen and (max-width: 1024px)
+                    display block
+                p
+                    font-family Museo Sans Cyrl Light
+                    font-size: 22px
+                    color: #111F25
+                    @media screen and (max-width: 1600px)
+                        font-size 18px
+                    @media screen and (max-width: 1024px)
+                        font-size: 16px;
+                        line-height: 33px;
+            .hashtags
+                display: flex
+                padding-top: 56px
+                @media screen and (max-width: 1024px)
+                    padding-top 16px
+                p
+                    font-family: Museo Cyrl;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding-right: 8px
+            .bold
+                color: #BA8D6C !important
+                font-family Museo Sans Cyrl Bold !important
+                padding-right: 18px
+.about_the_bath
+    .bg-box
+        background-image: url('../assets/img/about_the_bath_bg.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 126px 0 153px 0
+        margin-bottom 59px
+        @media screen and (max-width: 1024px)
+            padding: 20px 16px 43px
+            margin-bottom 24px
+        .text-box
+            width: 50%
+            margin: 0 auto
+            @media screen and (max-width: 1400px)
+                width 70%
+            @media screen and (max-width: 1024px)
+                width 100%
+            h1
+                font-family: Museo Cyrl;
+                font-size: 64px;
+                color: #FFFFFF;
+                margin-bottom 63px
+                @media screen and (max-width: 1024px)
+                    font-size: 56px;
+                    margin-bottom 34px
+            p
+                font-family: Museo Sans Cyrl Light
+                line-height: 34px;
+                font-size: 22px;
+                color: #FFFFFF;
+                @media screen and (max-width: 1024px)
+                    font-size: 18px;
+                    line-height: 22px;
+                &.top
+                    margin-bottom 48px
+                    @media screen and (max-width: 1024px)
+                        margin-bottom 27px
+    .images-box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 36px
+        grid-row-gap: 28px
+        margin-bottom 85px
+        @media screen and (max-width: 1024px)
+            grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width: 767px)
+            display: block
+            margin-bottom 40px
+        img
+            width: 100%
+            @media screen and (max-width: 1024px)
+                margin-bottom 24px
+.stocks_block
+    padding-top: 58px
+    padding-bottom: 65px
+    background-color: #ffffff
+    @media screen and (max-width: 1024px)
+        padding-top: 8px
+        padding-bottom: 20px
+    h1
+        @media screen and (max-width: 1024px)
+            font-size: 32px;
+            padding 0 16px
+    .stocks
+        padding-top: 79px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 36px
+        @media screen and (max-width: 1024px)
+            grid-template-columns: repeat(2, 1fr)
+            padding 79px 16px 0 16px
+        @media screen and (max-width: 767px)
+            padding 0
+            display block
+        .stock_item
+            .img_box
+                position relative
+                margin-bottom: 23px
+                &:hover
+                    &:before
+                        display block
+                    &:after
+                        display block
+                &:before
+                    display: none
+                    content: "Подробнее"
+                    font-family Museo Cyrl
+                    border: 1px solid #ffffff
+                    padding: 14px 0px
+                    color: #ffffff
+                    border-radius: 4px
+                    position: absolute
+                    top: calc(50% - 24px);
+                    left 0
+                    right 0
+                    width: 203px
+                    margin: auto
+                    text-align: center
+                    z-index 2
+                    cursor pointer
+                &:after
+                    display: none
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height 100%
+                    background: rgba(0, 0, 0, 0.58)
+                    top 0
+                img
+                    width 100%
+            h4
+                font-family Museo Cyrl
+                font-size: 24px
+                color: #151515
+                @media screen and (max-width: 1024px)
+                    font-size: 18px;
+                    padding 0 16px
+            .description
+                height 154px
+                overflow hidden
+                .table-block
+                    display: flex
+                    justify-content: space-around
+            p
+                font-family Museo Sans Cyrl Light
+                font-size: 18px
+                color: #151515
+                padding-top: 18px
+                @media screen and (max-width: 1024px)
+                    padding 16px 16px 0 16px
+                    font-size: 15px;
+            .btn
+                display none
+                @media screen and (max-width: 1024px)
+                    display flex
+                    justify-content: center
+                    align-items: center
+                    margin 40px auto
+                    font-family: Museo Cyrl;
+                    font-size: 20px;
+                    line-height: 19px;
+                    border: 2px solid #BA8D6C;
+                    color: #BA8D6C;
+                    border-radius: 4px;
+                    width 283px
+                    height 62px
+
+    .pagination
+        display: flex
+        align-items: center
+        justify-content center
+        padding-top: 73px
+        .left
+            margin-right: 42px
+            cursor pointer
+        .right
+            transform: rotate(180deg)
+            margin-left: 42px
+            cursor pointer
+        span
+            font-family Museo Cyrl
+            font-size: 24px
+            color: #151515
+            margin: 0 14px
+            cursor pointer
+        .active
+            color: #BA8D6C
+.modal_stock
+    position: fixed
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    margin: auto
+    background-color: #FFFFFF
+    width: 70%
+    height auto
+    z-index 102
+    display none
+    padding: 82px 80px 82px 80px
+    @media screen and (max-width: 1024px)
+        padding 0  0 40px 0
+        width: 90%
+        height 90%
+        max-width 400px
+        max-height: 800px
+        z-index 102
+        overflow auto
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display none
+    .close
+        position: absolute
+        right -126px
+        top -10px
+        cursor pointer
+        @media screen and (max-width: 1024px)
+            position: fixed
+            top: 30px;
+            right: 30px;
+            width 30px
+            height 30px
+        img
+            @media screen and (max-width: 1024px)
+                width 100%
+                height 100%
+    .img-wrapper
+        width 40%
+        padding-right: 56px
+        @media screen and (max-width: 1024px)
+            width 100%
+            padding 0
+        img
+            width 100%
+
+    .content
+        width 60%
+        @media screen and (max-width: 1024px)
+            width 83%
+            margin auto
+        h4
+            font-family Museo Cyrl
+            font-size: 32px
+            color: #151515
+            padding-bottom: 38px
+            @media screen and (max-width: 1024px)
+                font-size: 24px;
+                padding-bottom: 20px
+        .text
+            font-family Museo Sans Cyrl Light
+            font-size: 20px
+            color: #000000
+            padding-bottom: 40px
+            @media screen and (max-width: 1024px)
+                font-size: 14px;
+                padding-bottom: 20px
+            .table-block
+                display: flex
+                justify-content: space-around
+        .hashtags
+            display: flex
+            flex-wrap: wrap
+            font-family: Museo Sans Cyrl;
+            font-size: 14px;
+            line-height: 20px;
+            p
+                width: 26%
+                min-width: 125px;
+                @media screen and (max-width: 1024px)
+                    min-width: auto
+                    width auto
+                    flex-wrap: no-wrap
+.overlay
+    display: none
+    position: absolute
+    width: 100%
+    height 100%
+    background-color: rgba(0,0,0,0.8)
+    z-index 2
+    @media screen and (max-width: 1024px)
+        top 0
+        z-index 101
+.branches-block
+    padding: 49px 0 64px
+    @media screen and (max-width: 1024px)
+        padding-top 8px
+        padding-bottom 40px
+    h1
+        margin-bottom: 50px
+        color: #151515;
+        @media screen and (max-width: 1024px)
+            margin-bottom 24px
+            margin-left 16px
+            font-size: 32px;
+            line-height: 32px;
+    .department-paginator
+        display flex
+        border-bottom 1px solid rgba(0, 0, 0, 0.4)
+        margin-bottom 49px
+        overflow auto
+        justify-content: space-between
+        @media screen and (max-width: 1024px)
+            margin-left 16px
+            margin-right 16px
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display none
+        p
+            font-family: Museo Cyrl;
+            font-size: 22px;
+            color: #000000;
+            padding-bottom: 23px
+            cursor pointer
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            white-space: nowrap;
+            &.active
+                border-bottom 4px solid #000000;
+            @media screen and (max-width: 1024px)
+                padding-bottom: 12px
+                margin-right 35px
+                font-size: 16px;
+    .department-block
+        .department-item
+            display none
+            &.active
+                display block
+            .bg-box
+                padding 365px 0 87px
+                background-repeat: no-repeat
+                background-size: cover
+                background-position 50% 50%
+                margin-bottom 61px
+                position relative
+                z-index 1
+                @media screen and (max-width: 1024px)
+                    margin-bottom 27px
+                    padding 0
+                    height 500px
+                @media screen and (max-width: 767px)
+                    height 260px
+                &.mens-department-bg
+                    background-image url("../assets/img/Mens_department_BG.jpg")
+                &.vip-department-bg
+                    background-image url("../assets/img/vip_departamet_bg.jpg")
+                &.cabinets-departament-bg
+                    background-image url("../assets/img/cabinets-departament-bg.jpg")
+                &.women-departament-bg
+                    background-image url("../assets/img/women-departament-bg.jpg")
+                &.highest-rank-bg
+                    background-image url("../assets/img/highest_rank-bg.png")
+                &:before
+                    content: ''
+                    position: absolute
+                    bottom 0
+                    width: 100%
+                    height 319px
+                    background: linear-gradient(180deg, rgba(26, 18, 18, 0.79) 0%, rgba(0, 0, 0, 0) 100%);
+                    transform: rotate(-180deg);
+                    z-index -1
+                    @media screen and (max-width: 1024px)
+                        display: none
+                h2
+                    font-family: Museo Cyrl;
+                    font-size: 64px;
+                    color: #FFFFFF;
+                    z-index 2
+                    @media screen and (max-width: 1024px)
+                        display: none
+            .info-box
+                .block-btns
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom 56px
+                    @media screen and (max-width: 1024px)
+                        margin-bottom 27px
+                    p
+                        font-family: Museo Sans Cyrl Light;
+                        font-size: 20px;
+                        line-height: 28px;
+                        letter-spacing: 0.24px;
+                        color: #111F25;
+                        width: 54%
+                        @media screen and (max-width: 1024px)
+                            width: 100%
+                            margin 0 12px 0px 20px
+                            font-size: 14px;
+                            line-height: 19px;
+                    .btn-box
+                        display: flex
+                        @media screen and (max-width: 1024px)
+                            display: none
+                        .btn-brown
+                            display: block
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            background: #BA8D6C;
+                            border-radius: 8px;
+                            width: 270px
+                            height 62px
+                            text-align: center
+                            padding-top 18px
+                            cursor: pointer
+                            color #FFFFFF
+                        .btn-white
+                            position relative
+                            display: block
+                            width: 270px
+                            height 62px
+                            text-align: center
+                            //padding-left 56px
+                            padding-top 18px
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 19px;
+                            color: #000000;
+                            border: 2px solid #BA8D6C;
+                            border-radius: 8px;
+                            margin-left 30px
+                            cursor pointer
+                            // &:before
+                            //     position: absolute
+                            //     content: 'PDF'
+                            //     right 58px
+                            //     top 19px
+                            //     font-family: Lato;
+                            //     font-size: 16px;
+                .table-box
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom 71px
+                    @media screen and (max-width: 1024px)
+                        display: block
+                        padding 0 16px
+                        margin-bottom 40px
+                    h3
+                        font-family: Museo Cyrl;
+                        font-size: 24px;
+                        line-height: 25px;
+                        letter-spacing: 0.216px;
+                        @media screen and (max-width: 1024px)
+                            font-size: 22px;
+                            line-height: 24px;
+                            color: #2E2C2B;
+                    .time-box
+                        min-width: 212px
+                        color: #111F25;
+                        @media screen and (max-width: 1024px)
+                            width: 100%
+                            margin-bottom 29px
+                        h3
+                            margin-bottom 27px
+                            @media screen and (max-width: 1024px)
+                                margin-bottom 15px
+                        h4
+                            font-family Museo Cyrl
+                            margin 16px 0 8px
+                        p
+                            font-family: Museo Sans Cyrl Light;
+                            font-size: 16px;
+                            line-height: 28px;
+                            letter-spacing: 0.264px;
+                            color: #111F25;
+                            @media screen and (max-width: 1024px)
+                                font-size: 15px;
+                                line-height: 23px;
+                                letter-spacing: 0
+                                &.mr-46
+                                    margin-right 46px
+                            span
+                                font-size: 20px;
+                                padding-left 15px
+                                @media screen and (max-width: 1024px)
+                                    padding-left 13px
+                                    font-size: 15px;
+                                    line-height: 23px;
+                    .price-box
+                        width: 70%
+                        @media screen and (max-width: 1024px)
+                            width: 100%
+                        h3
+                            margin-bottom 20px
+                            @media screen and (max-width: 1024px)
+                                margin-bottom 27px
+                        .title-for-table
+                            display: grid
+                            grid-template-columns: 2fr repeat(3, 1fr)
+                            margin-bottom 24px
+                            grid-gap 16px
+                            @media screen and (max-width: 1024px)
+                                display: none
+                            p
+                                font-family: Lato;
+                                font-size: 15px;
+                                line-height: 28px;
+                                letter-spacing: 0.264px;
+                                opacity: 0.7;
+                                @media screen and (max-width: 1024px)
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    &.pryce-title
+                                        display: none
+                            .space
+                                @media screen and (max-width: 1024px)
+                                    display none
+                        p
+                            font-family: Museo Sans Cyrl Light;
+                            font-size: 18px;
+                            line-height: 30px;
+                            color: #111F25;
+                            @media screen and (max-width: 1024px)
+                                width 45%
+                                font-size: 15px;
+                                line-height: 15px;
+                                margin-bottom 22px
+                            &.bold
+                                font-family: Museo Sans Cyrl
+                                @media screen and (max-width: 1024px)
+                                    width: 100%
+                                    font-size: 20px;
+                                    line-height: 20px;
+                                    color: #BA8D6C;
+                                    margin-bottom 20px
+                            &.price
+                                font-family: Museo Sans Cyrl;
+                                font-size: 20px;
+                                line-height: 30px;
+                                color: #BA8D6C;
+                                margin-bottom 24px
+                            &.small
+                                font-size: 14px;
+                                line-height: 16px;
+                                @media screen and (max-width: 1024px)
+                                    width 100%
+                                    margin-bottom 40px
+
+                        .table-str
+                            display: grid
+                            grid-gap: 16px
+                            grid-template-columns: 2fr repeat(3, 1fr)
+                            padding-bottom 25px
+                            margin-bottom 25px
+                            @media screen and (max-width: 1024px)
+                                display flex
+                                flex-wrap: wrap
+                                align-items: center
+                                padding-bottom 0
+                                margin-bottom 0
+                            .show-mobil
+                                display none
+                                font-family: Museo Cyrl;
+                                font-size: 12px;
+                                line-height: 15px;
+                                color: #2E2C2B;
+                                @media screen and (max-width: 1024px)
+                                    display block
+                            .hide-mobil
+                                @media screen and (max-width: 1024px)
+                                    display none
+                            .show
+                                display none
+                                @media screen and (max-width: 1024px)
+                                    display: block
+                                    font-size: 20px
+                                    color #ba8d6c
+                            .title-for-table-mobil
+                                display: none
+                                width: 100%
+                                margin-bottom 5px
+                                p
+                                    font-family: Lato;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    color: #000000;
+                                    opacity: 0.7;
+                                    width 100%
+                                    margin-bottom 0
+                                    width: 45%
+                                @media screen and (max-width: 1024px)
+                                    display: flex
+                                    width 100%
+                            &:not(:last-of-type)
+                                border-bottom: 1px solid rgba(203, 203, 203, 0.6);
+                                @media screen and (max-width: 1024px)
+                                    margin-bottom 24px
+                        .table-str-last
+                            display: grid
+                            grid-template-columns: 3fr 1fr 1fr
+                            @media screen and (max-width: 1024px)
+                                display: block
+                                p.bold
+                                    margin-bottom 24px
+            .btn-box
+                display: none
+                @media screen and (max-width: 1024px)
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin-bottom 40px
+                .btn-brown
+                    display: block
+                    font-family: Lato;
+                    font-style: normal;
+                    font-size: 20px;
+                    line-height: 19px;
+                    background: #BA8D6C;
+                    border-radius: 8px;
+                    width: 297px
+                    height 62px
+                    text-align: center
+                    padding-top 18px
+                    cursor: pointer
+                    color #FFFFFF
+                    margin-bottom 24px
+                .btn-white
+                    position relative
+                    display: block
+                    width: 297px
+                    height 62px
+                    text-align: center
+                    padding-top 18px
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 19px;
+                    color: #000000;
+                    border: 2px solid #BA8D6C;
+                    border-radius: 8px;
+                    cursor pointer
+
+        .image_block
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 61px
+            @media screen and (max-width: 1024px)
+                padding 0 16px
+                grid-template-columns: repeat(2, 1fr)
+            @media screen and (max-width: 767px)
+                padding 0
+                display: block
+            img
+                width: 100%
+                @media screen and (max-width: 1024px)
+                    margin-bottom 24px
+        .vip-sliders-block
+            display: flex
+            justify-content: space-between
+            @media screen and (max-width: 1024px)
+                display block
+            .vip-slider-wrapper
+                max-width: calc(33.33% - 36px)
+                @media screen and (max-width: 1024px)
+                    max-width 70%
+                    margin auto
+                @media screen and (max-width: 767px)
+                    max-width 100%
+                &.center-warpper
+                    margin 0 auto
+                    @media screen and (max-width: 767px)
+                        margin: 32px 0 36px
+                .vip-slider
+                    margin-bottom 24px
+                    .slider-item
+                        max-height: 476px
+                        img
+                            width: 100%
+                            object-fit: cover
+                    .slick-dots
+                        bottom 16px
+                        li
+                            width: 38px;
+                            height: 3px;
+                            margin 0 7.5px
+                            button
+                                width: 38px;
+                                height: 3px;
+                                &:before
+                                    content ''
+                                    width: 38px
+                                    height 3px
+                                    background-color #FFFFFF
+                .text-box
+                    @media screen and (max-width: 1024px)
+                        padding 0 16px
+                    h4
+                        margin-bottom 20px
+                        font-family: Museo Cyrl;
+                        font-size: 24px;
+                        line-height: 26px;
+                        color: #151515;
+                    p
+                        font-family: Museo Sans Cyrl Light;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #151515;
+                        @media screen and (max-width: 1024px)
+                            font-size: 14px;
+                            line-height: 19px;
+        .cabonets_image_block
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap 36px
+            @media screen and (max-width: 767px)
+                display block
+            .img-wrapper
+                img
+                    width 100%
+                    @media screen and (max-width: 1024px)
+                        margin-bottom 24px
+.certificate
+    padding-top: 58px
+    background-color: #ffffff
+    @media screen and (max-width: 1024px)
+        padding 0 16px
+        h1
+            padding-top 8px
+            font-size: 32px;
+            line-height: 32px;
+            color: #2E2C2B;
+    .content_block
+        display: flex
+        align-items: center
+        justify-content space-between
+        padding-top: 92px
+        padding-bottom: 96px
+        @media screen and (max-width: 1400px)
+            align-items: flex-start
+        @media screen and (max-width: 1024px)
+            display block
+            padding-top: 40px
+        img
+            width: 45%
+            @media screen and (max-width: 1024px)
+                width 100%
+                margin-bottom 24px
+        .info_block
+            width: 50%
+            @media screen and (max-width: 1024px)
+                width 100%
+            p
+                font-family Museo Cyrl
+                font-size: 24px
+                color: #111F25
+                line-height: 34px
+                @media screen and (max-width: 1024px)
+                    font-size: 15px;
+                    line-height: 23px;
+                span
+                    color: #BA8D6C
+            .btn_block
+                display: flex
+                align-items: flex-end
+                padding-top: 68px
+                @media screen and (max-width: 1024px)
+                    padding-top 40px
+                    display block
+                    margin auto
+                .select-wrapper
+                    width 345px
+                    @media screen and (max-width: 1024px)
+                        max-width: 300px;
+                        margin auto
+                        width auto
+                    p
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #151515;
+                        border-radius: 4px;
+                .select
+                    overflow: hidden;
+                    background: no-repeat right transparent
+                    max-width: 345px
+                    width: 100%
+                    height 62px
+                    position relative
+                    border: 2px solid #979797
+                    border-radius: 8px
+                    z-index 2
+                    cursor pointer
+                    @media screen and (max-width: 1024px)
+                        margin-bottom 40px
+                    &:after
+                        content: "▼"
+                        position: absolute
+                        width: 0
+                        height 0
+                        top 23px
+                        right 25px
+                        z-index -1
+                    span
+                        display block
+                        font-family Museo Cyrl
+                        font-size: 14px
+                        color: #151515
+                        padding-bottom: 5px
+                    select
+                        background: transparent;
+                        padding: 5px;
+                        font-size: 16px;
+                        line-height: 1;
+                        -webkit-appearance: none;
+                        width: 100%
+                        height 100%
+                        z-index 2
+                        font-family Museo Cyrl
+                        font-size: 18px
+                        color #151515
+                        padding-left: 22px
+                        border-radius: 8px
+                        border: none
+                        cursor pointer
+                .btn_buy
+                    background-color: #BA8D6C
+                    color: #ffffff
+                    font-family Museo Cyrl
+                    font-size: 18px
+                    border-radius: 8px
+                    cursor pointer
+                    margin-left: 23px
+                    height 62px
+                    width: 265px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    box-shadow: 0 14px 40px 0 rgba(114, 79, 54, 0.5);
+                    @media screen and (max-width: 1024px)
+                        margin auto
+.feedback
+    display: none
+    position: fixed
+    top 0
+    bottom: 0
+    right 0
+    left 0
+    margin: auto
+    max-width: 680px
+    height 750px
+    background-color: #ffffff
+    padding: 54px 124px
+    z-index: 102
+    overflow: auto
+    @media screen and (max-width: 767px)
+        width 100%
+        height 100%
+        padding 16px 16px 0 16px
+        z-index: 200
+    img
+        position absolute
+        top 26px
+        right 26px
+        cursor pointer
+        @media screen and (max-width: 767px)
+            top 16px
+            width 36px
+    h3
+        font-family Museo Cyrl
+        font-size: 36px
+        color: #151515
+        padding-bottom: 64px
+        @media screen and (max-width: 767px)
+            font-size: 32px
+            padding-bottom 16px
+    form
+        display: block
+        input, lebel
+            display: block
+        label
+            font-family Museo Cyrl
+            font-size: 14px
+            color: #151515
+        input[type=text]
+            border 2px solid #979797
+            border-radius: 8px
+            padding: 20px 0 23px 23px
+            width: 416px
+            font-family Museo Cyrl
+            font-size: 18px
+            color: #151515
+            margin-bottom: 24px
+            margin-top: 8px
+            @media screen and (max-width: 767px)
+                padding: 16px 0 16px 23px
+                width 100%
+        #radio
+            display: flex
+            justify-content space-between
+            margin-bottom: 24px
+            margin-top 17px
+            input[type="radio"]:checked,
+            input[type="radio"]:not(:checked)
+                position: absolute
+                left: -9999px
+            input[type="radio"]:checked + label,
+            input[type="radio"]:not(:checked) + label
+                display: inline-block
+                position: relative
+                padding-left: 28px
+                line-height: 20px
+                cursor: pointer
+            input[type="radio"]:checked + label:before,
+            input[type="radio"]:not(:checked) + label:before
+                content: ""
+                position: absolute
+                left: 0px
+                top: 0px
+                width: 16px
+                height: 16px
+                border: 2px solid #dddddd
+                background-color: #ffffff
+            input[type="radio"]:checked + label:before,
+            input[type="radio"]:not(:checked) + label:before
+                border-radius: 100%
+            input[type="radio"]:checked + label:after,
+            input[type="radio"]:not(:checked) + label:after
+                content: ""
+                position: absolute
+                -webkit-transition: all 0.2s ease
+                -moz-transition: all 0.2s ease
+                -o-transition: all 0.2s ease
+                transition: all 0.2s ease
+            input[type="radio"]:checked + label:after,
+            input[type="radio"]:not(:checked) + label:after
+                left: 6px
+                top: 6px
+                width: 8px
+                height: 8px
+                border-radius: 100%
+                background-color: #743F28
+            input[type="radio"]:not(:checked) + label:after
+                opacity: 0
+            input[type="radio"]:checked + label:after
+                opacity: 1
+        #date_label
+            color: #979797
+        .small_cab, .middle_cab, .big_cab
+            display: flex
+        .check-box
+            display: flex
+            align-items: center
+            margin-bottom: 51px
+            @media screen and (max-width: 767px)
+                margin-bottom 16px
+            label[for="politics"]
+                &.error-checked
+                    &:before
+                        border: 2px solid red !important;
+            input[type="checkbox"]:checked,
+            input[type="checkbox"]:not(:checked)
+                position: absolute
+                left: -9999px
+            input[type="checkbox"]:checked + label,
+            input[type="checkbox"]:not(:checked) + label
+                display: inline-block
+                position: relative
+                padding-left: 28px
+                line-height: 20px
+                cursor: pointer
+            input[type="checkbox"]:checked + label:before,
+            input[type="checkbox"]:not(:checked) + label:before
+                content: ""
+                position: absolute
+                left: 0px
+                top: -10px
+                width: 16px
+                height: 16px
+                border: 2px solid #dddddd
+                background-color: #ffffff
+            input[type="checkbox"]:checked + label:before,
+            input[type="checkbox"]:not(:checked) + label:before
+                border-radius: 100%
+            input[type="checkbox"]:checked + label:after,
+            input[type="checkbox"]:not(:checked) + label:after
+                content: ""
+                position: absolute
+                -webkit-transition: all 0.2s ease
+                -moz-transition: all 0.2s ease
+                -o-transition: all 0.2s ease
+                transition: all 0.2s ease
+            input[type="checkbox"]:checked + label:after,
+            input[type="checkbox"]:not(:checked) + label:after
+                left: 6px
+                top: -4px
+                width: 8px
+                height: 8px
+                border-radius: 100%
+                background-color: #743F28
+                -webkit-transform: rotate(-45deg)
+                -moz-transform: rotate(-45deg)
+                -o-transform: rotate(-45deg)
+                -ms-transform: rotate(-45deg)
+                transform: rotate(-45deg)
+            input[type="checkbox"]:not(:checked) + label:after
+                opacity: 0
+            input[type="checkbox"]:checked + label:after
+                opacity: 1
+            p
+                font-family Museo Cyrl
+                font-size: 14px
+                color: #111F25
+                span
+                    text-decoration: underline
+        .send_block
+            .btn-send
+                display: block
+                padding: 20px 66px 23px 66px
+                background-color: #BA8D6C
+                color: #ffffff
+                font-family: Museo Cyrl
+                font-size: 18px
+                border: none
+                border-radius: 8px
+                cursor pointer
+                margin: auto
+                @media screen and (max-width: 767px)
+                    padding: 16px 66px 16px 66px
+#feedback_name-error, #feedback_phone-error, #feedback_date-error
+    display: none !important
+.error:not(label)
+    border: 2px solid red !important
+.steam
+    display: none
+    position: fixed
+    top 0
+    bottom: 0
+    right 0
+    left 0
+    margin: auto
+    max-width: 680px
+    height 500px
+    background-color: #ffffff
+    padding: 54px 132px
+    z-index: 102
+    @media screen and (max-width: 767px)
+        padding 48px 16px
+        height 400px;
+    img
+        position absolute
+        top 26px
+        right 26px
+        cursor pointer
+        @media screen and (max-width: 767px)
+            width 32px
+    h3
+        font-family Museo Cyrl
+        font-size: 36px
+        color: #151515
+        padding-bottom: 64px
+        text-align: center
+        @media screen and (max-width: 767px)
+            padding-bottom: 16px
+            font-size: 32px;
+            text-align: left
+            margin-right 16px
+    .table
+        display: flex
+        justify-content: center
+        @media screen and (max-width: 767px)
+            justify-content: space-between
+        .left
+            margin-right 76px
+            @media screen and (max-width: 767px)
+                margin-right 0
+        .col
+            display: flex
+            flex-wrap: wrap
+            span
+                width: 50%
+                font-size: 22px
+                font-family Museo Cyrl
+                color: #954B16
+                padding-bottom: 14px
+                @media screen and (max-width: 767px)
+                    width 35%
+                &:after
+                    content: "00"
+                    position: absolute
+                    font-size: 14px
+                    font-family Museo Cyrl
+                    color: #954B16
+            p
+                width 50%
+                font-size: 22px
+                font-family Museo Cyrl
+                color: #151515
+                padding-bottom: 14px
+                @media screen and (max-width: 767px)
+                    font-size: 16px;
+.tea_card
+    width 1000px
+    position: fixed
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    opacity 0
+    z-index -1
+    @media screen and (max-width: 1024px)
+        width 100%
+    .tea_close
+        position: absolute
+        top -44px
+        right 126px
+        width: 32px
+        height 32px
+        cursor: pointer
+        @media screen and (max-width: 1024px)
+            right 26px
+
+    .tea_card_slider
+        .slider-item
+            margin: 0 12px
+            img
+                width: 100%
+                max-height: 690px
+        .slick-arrow
+            z-index 3
+            opacity 1
+            width: 32px
+            height 17.5px
+            top 50%
+            &:before
+                left 0
+                position absolute
+                width 100%
+                height 100%
+                content ""
+                background-repeat no-repeat
+                background-size cover
+                background-image: url("../assets/img/Vector.svg")
+            &.slick-prev
+                left -48px
+            &.slick-next
+                right -48px
+                &:before
+                    transform rotate(-180deg)
+.menu
+    width 700px
+    position: fixed
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    opacity 0
+    z-index -1
+    @media screen and (max-width: 1270px)
+        width 70%
+    img.menu_close
+        position: absolute
+        top -44px
+        right -20px
+        width: 32px
+        height 32px
+        cursor: pointer
+        z-index: 103;
+        @media screen and (max-width: 1400px)
+            top -6px
+            right 0
+    .menu-slider
+        .slider-item
+            img
+                width: 80%
+                max-height: 90%
+                @media screen and (max-width: 1400px)
+                    width 70%
+                    margin auto
+.form-message
+    display: none
+    align-items: center
+    justify-content: center
+    position: fixed
+    top 0
+    bottom: 0
+    right 0
+    left 0
+    margin: auto
+    max-width: 680px
+    height 250px
+    background-color: #ffffff
+    padding 54px 124px
+    z-index 103
+
+    &.visible
+        display flex
+
+    @media screen and (max-width: 767px)
+        width 90%
+    img
+        position absolute
+        top 26px
+        right 26px
+        cursor pointer
+    h3
+        font-family Museo Cyrl
+        font-size: 36px
+        color: #151515
+    .recall-text
+        text-align: center
+        h2
+            font-family: Museo Cyrl;
+            font-size: 36px;
+            color: #BA8D6C;
+            margin-bottom: 16px
+        p
+            font-family: Museo Cyrl;
+            font-size: 18px;
+            color: #151515;
+.certificate_feedback
+    display: none
+    position: fixed
+    top 0
+    bottom: 0
+    right 0
+    left 0
+    margin: auto
+    max-width: 680px
+    height 650px
+    background-color: #ffffff
+    padding: 54px 124px
+    z-index: 102
+    @media screen and (max-width: 767px)
+        width 100%
+        height 100%
+        padding 90px 16px 0 16px
+        z-index: 200
+        overflow auto
+    img
+        position absolute
+        top 26px
+        right 26px
+        cursor pointer
+        @media screen and (max-width: 767px)
+            width 36px
+    h3
+        font-family Museo Cyrl
+        font-size: 36px
+        color: #151515
+        padding-bottom: 64px
+        @media screen and (max-width: 767px)
+            font-size: 32px
+            padding-bottom 16px
+    form
+        display: block
+        input, lebel
+            display: block
+        label
+            font-family Museo Cyrl
+            font-size: 14px
+            color: #151515
+        input[type=text]
+            border 2px solid #979797
+            border-radius: 8px
+            padding: 20px 0 23px 23px
+            width: 416px
+            font-family Museo Cyrl
+            font-size: 18px
+            color: #151515
+            margin-bottom: 24px
+            margin-top: 8px
+            @media screen and (max-width: 767px)
+                width 100%
+        .cost
+            font-family Museo Cyrl
+            font-size: 22px
+            color: #151515
+            margin-bottom 24px
+            @media screen and (max-width: 767px)
+                font-size: 18px
+
+        .check-box
+            display: flex
+            align-items: center
+            margin-bottom: 51px
+            label[for="certificate_politics"]
+                &.error-checked
+                    &:before
+                        border: 2px solid red !important;
+            input[type="checkbox"]:checked,
+            input[type="checkbox"]:not(:checked)
+                position: absolute
+                left: -9999px
+            input[type="checkbox"]:checked + label,
+            input[type="checkbox"]:not(:checked) + label
+                display: inline-block
+                position: relative
+                padding-left: 28px
+                line-height: 20px
+                cursor: pointer
+            input[type="checkbox"]:checked + label:before,
+            input[type="checkbox"]:not(:checked) + label:before
+                content: ""
+                position: absolute
+                left: 0px
+                top: -10px
+                width: 16px
+                height: 16px
+                border: 2px solid #dddddd
+                background-color: #ffffff
+            input[type="checkbox"]:checked + label:before,
+            input[type="checkbox"]:not(:checked) + label:before
+                border-radius: 100%
+            input[type="checkbox"]:checked + label:after,
+            input[type="checkbox"]:not(:checked) + label:after
+                content: ""
+                position: absolute
+                -webkit-transition: all 0.2s ease
+                -moz-transition: all 0.2s ease
+                -o-transition: all 0.2s ease
+                transition: all 0.2s ease
+            input[type="checkbox"]:checked + label:after,
+            input[type="checkbox"]:not(:checked) + label:after
+                left: 6px
+                top: -4px
+                width: 8px
+                height: 8px
+                border-radius: 100%
+                background-color: #743F28
+                -webkit-transform: rotate(-45deg)
+                -moz-transform: rotate(-45deg)
+                -o-transform: rotate(-45deg)
+                -ms-transform: rotate(-45deg)
+                transform: rotate(-45deg)
+            input[type="checkbox"]:not(:checked) + label:after
+                opacity: 0
+            input[type="checkbox"]:checked + label:after
+                opacity: 1
+            p
+                font-family Museo Cyrl
+                font-size: 14px
+                color: #111F25
+                span
+                    text-decoration: underline
+        .send_block
+            .btn-send
+                display: block
+                padding: 20px 66px 23px 66px
+                background-color: #BA8D6C
+                color: #ffffff
+                font-family: Museo Cyrl
+                font-size: 18px
+                border: none
+                border-radius: 8px
+                cursor pointer
+                margin: auto
+#certificate_feedback_name-error, #certificate_feedback_phone-error
+    display: none !important
+
+.recall_page
+    flex-grow: 1
+    padding: 49px 0 122px
+    @media(max-width:1024px)
+        margin-top: 112px
+        padding: 8px 0 40px
+    .container
+        @media(max-width:1024px)
+            padding: 0 16px
+        h1
+            font-family: Museo Cyrl
+            font-size: 64px
+            line-height: 90px
+            color: #151515
+            margin-bottom 34px
+            @media(max-width:1024px)
+                font-size: 32px
+                line-height: 32px
+                margin-bottom: 24px
+        section
+            @media(max-width:1024px)
+                margin-top: 0
+        .content-wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 40px
+            @media(max-width:768px)
+                grid-template-columns: 1fr
+            section.form-block
+                max-width: 592px
+                @media(max-width:768px)
+                    margin: 0 auto
+                h2
+                    font-family: Museo Cyrl
+                    font-size: 32px
+                    line-height: 90px
+                    color: #151515
+                    margin-bottom: 24px
+                    @media(max-width:1024px)
+                        font-size: 22px
+                        line-height: 24px
+                form#recall
+                    margin 0
+                    label.error
+                        display: none !important
+                    .input-wrapper
+                        .title-input
+                            font-family: Museo Cyrl
+                            font-size: 14px
+                            line-height: 19px
+                            color: #151515
+                            margin-bottom: 4px
+                        input, textarea
+                            font-family: Museo Cyrl
+                            font-size: 18px
+                            line-height: 19px
+                            color: #151515
+                            padding: 20px 23px 23px
+                            border: 2px solid #DADADA
+                            border-radius: 8px
+                            width: 100%
+                            margin-bottom 24px
+                            &:focus
+                                border: 2px solid #979797;
+                            &::placeholder
+                                font-family: Museo Cyrl
+                                font-size: 18px
+                                line-height: 19px
+                                color: #151515
+                                opacity: 0.5
+                        textarea
+                            resize: none
+                            height 149px
+                    label.check-box
+                        display: flex
+                        align-items: center
+                        margin-bottom 15px
+                        cursor pointer
+                        input.check
+                            position: absolute
+                            left -9999px
+                            &:checked + .castom-checkbox
+                            &:checked + label + .castom-checkbox
+                                border: 2px solid #DADADA;
+                                &:after
+                                    display: block
+                        .castom-checkbox
+                            min-width: 16px
+                            height: 16px
+                            border: 2px solid #DADADA;
+                            border-radius: 8px;
+                            margin-right: 14px
+                            position: relative
+                            &:after
+                                content: ''
+                                position: absolute
+                                width 8px
+                                height 8px
+                                background: #743F28;
+                                border-radius: 8px;
+                                top: 2px
+                                left: 2px
+                                display: none
+                        label.error + .castom-checkbox
+                            border: 2px solid red;
+                        p
+                            font-family: Museo Cyrl;
+                            font-size: 14px;
+                            line-height: 19px
+                            color: #111F25;
+                            span
+                                text-decoration: underline
+                    .help-text
+                        font-family: Museo Cyrl
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #111F25;
+                        opacity: 0.5;
+                        margin-bottom: 20px
+                    input[type="submit"]
+                        width: 100%
+                        max-width: 265px
+                        display: block
+                        margin: 0 auto
+                        background: #BA8D6C;
+                        border-radius: 8px;
+                        padding: 20px 23px 23px
+                        font-family: Museo Cyrl;
+                        font-size: 18px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        cursor: pointer
+                        box-shadow: 0px 14px 40px 0px rgba(114,79,54,0.5);
+            section.recalls-block
+                padding-top: 24px
+                .recall-item
+                    width: 100%
+                    max-width: 644px
+                    margin-bottom 75px
+                    @media(max-width:768px)
+                        margin: 0 auto 75px
+                    &:last-of-type
+                        margin-bottom 0
+                    .title-block
+                        display: flex
+                        align-items: center
+                        margin-bottom: 24px
+                        .name
+                            font-family: Museo Cyrl;
+                            font-size: 18px;
+                            color: #BA8D6C;
+                            margin-right: 24px
+                        .date
+                            font-family: Museo Cyrl;
+                            font-size: 16px;
+                            color: #111F25;
+                            opacity: 0.5;
+                    .text
+                        font-family: Museo Sans Cyrl Light;
+                        font-style: italic;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #111F25;

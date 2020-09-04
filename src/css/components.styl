@@ -1,0 +1,27 @@
+/* Кастомный чекбокс (вешается на label) */
+.custom_checkbox
+	cursor pointer
+	user-select: none
+	min-height 23px
+
+	&::before
+		$size = 16px
+		content ""
+		font-size 0
+		display inline-block
+		margin-right 8px
+		width $size
+		height $size
+		box-sizing border-box
+		background-clip content-box
+		border-radius 50%
+		vertical-align middle
+		border 4px solid white
+		box-shadow 0 0 0 2px rgba(0, 0, 0, 0.1)
+		background-color transparent
+
+	&.error-checked::before
+		box-shadow 0 0 0 2px rgba(200, 0, 0, 0.7)
+
+.custom_checkbox_truebox:checked + .custom_checkbox:before
+	background-color #743f28

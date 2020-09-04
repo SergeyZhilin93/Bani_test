@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Усачевские бани
+        link(rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="css/style.styl")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/favicon_1.ico")
+
+    body
+        .overlay
+        include components/headerForOtherPages.pug
+        section.gallery_block
+            .container
+                h1 Галерея
+                .image_block
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal1.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal1.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal2.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal2.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal3.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal3.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal4.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal4.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal5.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal5.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal6.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal6.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal7.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal7.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal8.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal8.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal9.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal9.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal10.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal10.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal11.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal11.jpg)")
+                    a(data-fancybox="gallery" href="assets/img/gallery/gal12.jpg")
+                        .img-gal(style="background-image: url(assets/img/gallery/gal12.jpg)")
+                //- .pagination
+                //-     img(src="assets/img/gray_arrow.svg", alt="").left
+                //-     span 1
+                //-     span.active 2
+                //-     span ...
+                //-     span 4
+                //-     span 5
+                //-     img(src="assets/img/gray_arrow.svg", alt="").right
+
+        include components/feedback.pug
+        include components/form_message.pug
+
+        include components/footer.pug
+
+        script(src="js/main.js")

@@ -1,0 +1,13 @@
+.orderBeautyShop
+	img.close_modal(src="assets/img/feedback_close.svg", alt="")
+	form#form.beautyShopForm
+		h3 Заказать услугу
+		.title Ваше имя
+		input(name="name" placeholder="Введите имя" data-autofocus)
+		.title Ваш телефон
+		input(type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="off")
+		input#checkbox.custom_checkbox_truebox.check(type="checkbox")
+		label.custom_checkbox(for="checkbox") Даю согласие на <mark>обработку персональных данных</mark>
+		button Забронировать
+		input(type="hidden" name="date" value="--")
+		input(type="hidden" name="place" value="")
