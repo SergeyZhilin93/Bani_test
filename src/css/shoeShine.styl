@@ -1,15 +1,16 @@
-.shoeshine 
+  html.shoeshine
   .contacts-box
     p
       display: none
   h1
     font-weight 400;
+    font-size: 2.8vw
 
   .blockTitle
     &.shoe-shine-tab
-      background-image url("../assets/img/shoeshine/shoe-shine.jpg")
+      background-image url("../assets/img/shoeshine/shoe-shine.jpg");
   .service_wrapper
-    padding: 77px 160px;
+    padding: 77px 0;
     h2
       font-size: 32px;
       padding-bottom: 53px;
@@ -19,17 +20,40 @@
       & > *
         width: 50%;
     .list-left
-      display: flex;
       justify-content: space-between;
       padding-right: 5px;
-    .wrapper_price_left
-      color: #ba8d6c;
-    .list-right
+    .col
       display: flex;
       justify-content: space-between;
+      & > p:last-child
+        color: #ba8d6c;
+    .list-right
+      justify-content: space-between;
       padding-left: 35px
-    .wrapper_price_right
-      color: #ba8d6c;
+    .col
+      display: flex;
+      justify-content: space-between;
+      & > p:last-child
+        color: #ba8d6c;
   .container
     h2
       font-size: 32px;
+  section.beautyShop .department-block .department-item .blockTitle
+    height: 26.6vw;
+  div.breadcrumbs, h1, div.department-paginator, div.service_wrapper, div.action_block, section.beautyShop .department-block .gallery
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    .container
+      margin 0;
+  section.beautyShop .department-block .gallery
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  section.beautyShop .department-block .gallery img
+    width: calc(25% - 30px);
+    height: auto;
+  section.beautyShop .department-block .department-item .blockTitle h2
+    padding-left: 0;
+    width: 80%;
+    margin: 0 auto;
