@@ -47,12 +47,14 @@
     .container
       margin 0;
   section.beautyShop .department-block .gallery
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 354px;
   section.beautyShop .department-block .gallery img
-    width: calc(25% - 30px);
-    height: auto;
+    display: grid;
+    grid-auto-rows: auto
+    width: 100%;
+    height: 100%
   section.beautyShop .department-block .department-item .blockTitle h2
     padding-left: 0;
     width: 80%;
