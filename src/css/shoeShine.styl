@@ -11,14 +11,31 @@
       background-image url("../assets/img/shoeshine/shoe-shine.jpg");
   .service_wrapper
     padding: 77px 0;
+    font: 32px 'Museo Sans Cyrl';
     h2
-      font-size: 32px;
       padding-bottom: 53px;
+      font-weight 400
+    .list-price
+      color #BA8D6C;
     .wrapper_content
       display: flex;
       font-size: 24px;
       & > *
-        width: 50%;
+        width: 100%;
+      & > ul
+        -moz-column-count: 2;
+        -moz-column-gap: 60px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 60px;
+        column-count: 2;
+        column-gap: 60px;
+        padding 0
+        & > li
+          display: flex;
+          justify-content: space-between;
+          font-size: 22px;
+        & > li:not(:first-child):not(:last-child)
+          margin 14px 0
     .list-left
       justify-content: space-between;
       padding-right: 5px;
@@ -47,14 +64,16 @@
     .container
       margin 0;
   section.beautyShop .department-block .gallery
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--galleryImgWidth))
-    grid-auto-rows: var(--galleryImgWidth);
-  section.beautyShop .department-block .gallery img
-    display: grid;
-    grid-auto-rows: auto
-    width: var(--galleryImgWidth)
-    height: 100%
+    width 80%
+    margin-top 64px
+    display grid
+    grid-template-columns repeat(auto-fill, var(--galleryImgWidth))
+    grid-auto-rows var(--galleryImgWidth)
+    gap calc(115px / 3)
+    justify-content center
+
+    img
+      width var(--galleryImgWidth)
   section.beautyShop .department-block .department-item .blockTitle h2
     padding-left: 0;
     width: 80%;
@@ -65,10 +84,11 @@
   @media (max-width: 1209px)
     .gallery
       margin-top 56px
-      justify-content center
 
-    img:not(.any)
-      margin-top 0
-      margin-bottom 20px
-      margin-right 20px
+      img:not(.any)
+        margin-top 0
+        margin-bottom 20px
+        margin-right 20px
+  @media (max-width: 603px)
+    --galleryImgWidth 130px
 		

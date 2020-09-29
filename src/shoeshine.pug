@@ -33,86 +33,88 @@ html.beautyshop.shoeshine(lang="ru")
 					.service_wrapper
 						h2 Прайс на чистку обуви
 						.wrapper_content
-							.list-left.row
-								.col
-									p Рукавица
-									p 150 руб.
-								.col
-									p Колпак классический
-									p 300 руб.
-								.col
-									p Колпак «Усачевские бани»
-									p 800 руб.
-								.col
-									p Коврик войлок
-									p 200 руб.
-								.col
-									p Коврик деревянный
-									p 600 руб.
-								.col
-									p Мыло дегтярное
-									p 100 руб.
-								.col
-									p Мыло душистое «Спивак»
-									p 200 руб.
-								.col
-									p Мыло жидкое  «Спивак»
-									p 250 руб.
-								.col
-									p Гель для душа «Спивак»
-									p 300 руб.
-								.col
-									p Шампунь «Спивак»
-									p 400 руб.
-								.col
-									p Мочалка лыковая
-									p 300 руб.
-								.col
-									p Пемза овальная
-									p 200 руб.
-							.list-right
-								.col
-									p Мочалка сизаль
-									p 400 руб.
-								.col
-									p Мочалка рами овальная
-									p 200 руб.
-								.col
-									p Мочалка полипропилен
-									p 250 руб.
-								.col
-									p Массажер
-									p 200 руб.
-								.col
-									p Гребень деревянный
-									p 100 руб.
-								.col
-									p Полотенце махровое
-									p 1400 руб.
-								.col
-									p Халат махровый
-									p 3200 руб.
-								.col
-									p Сланцы
-									p 300 руб.
-								.col
-									p Веник дубовый
-									p 300 руб.
-								.col
-									p Веник березовый
-									p 300 руб.
-								.col
-									p Прокат простыни
-									p 300 руб.
-								.col
-									p Прокат полотенца
-									p 300 руб.
+							ul
+								li
+									span Рукавица
+									span.list-price 150 руб.
+								li
+									span Колпак классический
+									span.list-price 300 руб.
+								li
+									span Колпак «Усачевские бани»
+									span.list-price 800 руб.
+								li
+									span Коврик войлок
+									span.list-price 200 руб.
+								li
+									span Коврик деревянный
+									span.list-price 600 руб.
+								li
+									span Мыло дегтярное
+									span.list-price 100 руб.
+								li
+									span Мыло душистое «Спивак»
+									span.list-price 200 руб.
+								li
+									span Мыло жидкое  «Спивак»
+									span.list-price 250 руб.
+								li
+									span Гель для душа «Спивак»
+									span.list-price 300 руб.
+								li
+									span Шампунь «Спивак»
+									span.list-price 400 руб.
+								li
+									span Мочалка лыковая
+									span.list-price 300 руб.
+								li
+									span Пемза овальная
+									span.list-price 200 руб.
+								li
+									span Мочалка сизаль
+									span.list-price 400 руб.
+								li
+									span Мочалка рами овальная
+									span.list-price 200 руб.
+								li
+									span Мочалка полипропилен
+									span.list-price 250 руб.
+								li
+									span Массажер
+									span.list-price 200 руб.
+								li
+									span Гребень деревянный
+									span.list-price 100 руб.
+								li
+									span Полотенце махровое
+									span.list-price 1400 руб.
+								li
+									span Халат махровый
+									span.list-price 3200 руб.
+								li
+									span Сланцы
+									span.list-price 300 руб.
+								li
+									span Веник дубовый
+									span.list-price 300 руб.
+								li
+									span Веник березовый
+									span.list-price 300 руб.
+								li
+									span Прокат простыни
+									span.list-price 300 руб.
+								li
+									span Прокат полотенца
+									span.list-price 300 руб.
 				.department-item(data-id=2)
-					p Прайс 2
+					.service_wrapper
+						p Прайс 2
 				.department-item(data-id=3)
-					p Прайс 3
+					.service_wrapper
+						p Прайс 3
 				.department-item(data-id=4)
-					p Прайс 4
+					.service_wrapper
+						p Прайс 4
 				.action_block
 					h2 Акции
 					.action_slider
@@ -149,6 +151,7 @@ html.beautyshop.shoeshine(lang="ru")
 					img(alt="" src="assets/img/shoeshine/gallery/7.jpg")
 					img(alt="" src="assets/img/shoeshine/gallery/8.jpg")
 
-	include components/shoeShineFooter.pug
+		include components/shoeShineFooter.pug
+		include components/orderBeautyShop.pug
 
-	script(src="js/main.js")
+		script(src="js/main.js")
